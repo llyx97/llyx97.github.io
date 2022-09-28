@@ -7,7 +7,9 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am a first-year PhD student at the Language Computing and Machine Learning Group ([Lanco](https://lancopku.github.io/)), MOE Key Laboratory of Computational Linguistics, School of Computer Science, Peking University. I am supervised by Prof. [Xu Sun](https://xusun.org/). I received the degree of Master of Science in Engineering from the University of Chinese Academy of Sciences (UCAS), supervised by Prof. [Zheng Lin](https://teacher.ucas.ac.cn/~0023257).
+I am a first-year PhD student at the Language Computing and Machine Learning Group ([Lanco](https://lancopku.github.io/)), MOE Key Laboratory of Computational Linguistics, School of Computer Science, Peking University. I am supervised by Prof. [Xu Sun](https://xusun.org/). 
+
+I received the degree of Master of Science in Engineering from the University of Chinese Academy of Sciences (UCAS), supervised by Prof. [Zheng Lin](https://teacher.ucas.ac.cn/~0023257).
 
 Research Interests
 ======
@@ -29,7 +31,7 @@ Selected Publications([Full List](https://scholar.google.com/citations?user=pLOm
 
 * **Learning to Win Lottery Tickets in BERT Transfer via Task-agnostic Mask Training**   
 **Yuanxin Liu**, Fandong Meng, Zheng Lin, Peng Fu, Yanan Cao, Weipinng Wang and Jie Zhou   
-***NAACL 2022*** [[paper](https://aclanthology.org/2022.naacl-main.428/), [code](https://github.com/llyx97/TAMT)]
+***NAACL 2022*** [[paper](https://aclanthology.org/2022.naacl-main.428/), [code](https://github.com/llyx97/TAMT), [blog](https://mp.weixin.qq.com/s/Wd_IWHqJnaonilyVI3pPGA)]
 
 * **Marginal Utility Diminishes: Exploring the Minimum Knowledge for BERT Knowledge Distillation**   
 **Yuanxin Liu**, Fandong Meng, Zheng Lin, Weiping Wang and Jie Zhou   
@@ -54,11 +56,11 @@ Awards
 * **National Scholarship for Master Students**, Ministry of Education of P.R. China, 2021
 * **Merit Student**, UCAS, 2021
 * **IIE Presidential Special Award**, IIE, CAS, 2020
-* **Outstanding Graduate of Beijing**, Beijing Municipal Education Commission, 2019
+* **Outstanding Graduates of Beijing**, Beijing Municipal Education Commission, 2019
 
 Internship
 ======
-* Research Intern at WeChat AI, Tencent Inc., Oct. 2020 - Jun. 2022.
+* Research Intern at WeChat AI, Tencent Inc., Oct. 2020 - Jun. 2022. Mentor: [Fandong Meng](https://fandongmeng.github.io/)
 
 Academic Service
 ======
