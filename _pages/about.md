@@ -27,7 +27,15 @@ Selected Publications([Full List](https://scholar.google.com/citations?user=pLOm
 ======
 * **A Win-win Deal: Towards Sparse and Robust Pre-trained Language Models**   
 **Yuanxin Liu**, Fandong Meng, Zheng Lin, Jiangnan Li, Peng Fu, Yanan Cao, Weiping Wang and Jie Zhou   
-***NeurIPS 2022***
+***NeurIPS 2022*** (To appear)
+
+* **COST-EFF: Collaborative Optimization of Spatial and Temporal Efficiency with Slenderized Multi-exit Language Models**   
+Bowen Shen, Zheng Lin, **Yuanxin Liu**, Zhengxiao Liu, Lei Wang and Weiping Wang   
+***EMNLP 2022*** (To appear)
+
+* **Towards Robust Visual Question Answering: Making the Most of Biased Samples via Contrastive Learning**   
+Qingyi Si, **Yuanxin Liu**, Fandong Meng, Zheng Lin, Peng Fu, Yanan Cao, Weiping Wang and Jie Zhou   
+***EMNLP Findings 2022*** (To appear)   
 
 * **Learning to Win Lottery Tickets in BERT Transfer via Task-agnostic Mask Training**   
 **Yuanxin Liu**, Fandong Meng, Zheng Lin, Peng Fu, Yanan Cao, Weipinng Wang and Jie Zhou   
