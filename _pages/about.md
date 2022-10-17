@@ -27,7 +27,7 @@ Selected Publications([Full List](https://scholar.google.com/citations?user=pLOm
 ======
 * **A Win-win Deal: Towards Sparse and Robust Pre-trained Language Models**   
 **Yuanxin Liu**, Fandong Meng, Zheng Lin, Jiangnan Li, Peng Fu, Yanan Cao, Weiping Wang and Jie Zhou   
-***NeurIPS 2022*** (To appear)
+***NeurIPS 2022*** [[paper](https://arxiv.org/abs/2210.05211), [code](https://github.com/llyx97/sparse-and-robust-PLM)]
 
 * **COST-EFF: Collaborative Optimization of Spatial and Temporal Efficiency with Slenderized Multi-exit Language Models**   
 Bowen Shen, Zheng Lin, **Yuanxin Liu**, Zhengxiao Liu, Lei Wang and Weiping Wang   
