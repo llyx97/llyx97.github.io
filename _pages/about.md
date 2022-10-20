@@ -35,7 +35,11 @@ Bowen Shen, Zheng Lin, **Yuanxin Liu**, Zhengxiao Liu, Lei Wang and Weiping Wang
 
 * **Towards Robust Visual Question Answering: Making the Most of Biased Samples via Contrastive Learning**   
 Qingyi Si, **Yuanxin Liu**, Fandong Meng, Zheng Lin, Peng Fu, Yanan Cao, Weiping Wang and Jie Zhou   
-***EMNLP Findings 2022*** (To appear)   
+***EMNLP Findings 2022*** [[paper](https://arxiv.org/abs/2210.04563), [code](https://github.com/PhoebusSi/MMBS)]   
+
+* **Language Prior Is Not the Only Shortcut: A Benchmark for Shortcut Learning in VQA**   
+Qingyi Si, Fandong Meng, Mingyu Zheng, Zheng Lin, **Yuanxin Liu**, Peng Fu, Yanan Cao, Weiping Wang and Jie Zhou   
+***EMNLP Findings 2022*** [[paper](https://arxiv.org/abs/2210.04692), [code](https://github.com/PhoebusSi/VQA-VS)]   
 
 * **Learning to Win Lottery Tickets in BERT Transfer via Task-agnostic Mask Training**   
 **Yuanxin Liu**, Fandong Meng, Zheng Lin, Peng Fu, Yanan Cao, Weipinng Wang and Jie Zhou   
