@@ -31,7 +31,7 @@ Selected Publications([Full List](https://scholar.google.com/citations?user=pLOm
 
 * **COST-EFF: Collaborative Optimization of Spatial and Temporal Efficiency with Slenderized Multi-exit Language Models**   
 Bowen Shen, Zheng Lin, **Yuanxin Liu**, Zhengxiao Liu, Lei Wang and Weiping Wang   
-***EMNLP 2022*** (To appear)
+***EMNLP 2022*** [[paper](https://arxiv.org/abs/2210.15523), [code](https://github.com/sbwww/COST-EFF)]
 
 * **Towards Robust Visual Question Answering: Making the Most of Biased Samples via Contrastive Learning**   
 Qingyi Si, **Yuanxin Liu**, Fandong Meng, Zheng Lin, Peng Fu, Yanan Cao, Weiping Wang and Jie Zhou   
