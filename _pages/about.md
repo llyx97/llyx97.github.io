@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am a second-year PhD student at the Language Computing and Machine Learning Group ([Lanco](https://lancopku.github.io/)), Institute of Computational Linguistics (National Key Laboratory for Multimedia Information Processing), School of Computer Science, Peking University. I am supervised by Prof. [Xu Sun](https://xusun.org/). 
+I am a second-year PhD student at the Language Computing and Machine Learning Group ([Lanco](https://lancopku.github.io/)), Institute of Computational Linguistics (National Key Laboratory for Multimedia Information Processing), School of Computer Science, Peking University. I am supervised by Prof. [Xu Sun](https://xusun26.github.io/). 
 
 I received the degree of Master of Science in Engineering from the University of Chinese Academy of Sciences (UCAS), supervised by Prof. [Zheng Lin](https://teacher.ucas.ac.cn/~0023257).
 
@@ -25,6 +25,12 @@ Education
 
 Selected Publications([Full List](https://scholar.google.com/citations?user=pLOm4rYAAAAJ&hl=en))
 ======
+* **TempCompass: A benchmark to evaluate the temporal perception ability of Video LLMs**
+
+  **Yuanxin Liu**\*, Shicheng Li*, Yi Liu, Yuxiang Wang, Shuhuai Ren, Lei Li, Sishuo Chen, Xu Sun, Lu Hou
+
+  **Preprint** [[paper](https://arxiv.org/abs/2403.00476), [code](https://github.com/llyx97/TempCompass)]
+
 * **FETV: A Benchmark for Fine-Grained Evaluation of Open-Domain Text-to-Video Generation**
 
   **Yuanxin Liu**, Lei Li, Shuhuai Ren, Rundong Gao, Shicheng Li, Sishuo Chen, Xu Sun and Lu Hou
@@ -88,5 +94,6 @@ Internship
 
 Academic Service
 ======
-* **Reviewer**: NeurIPS (2022, 2023), ICML (2022, 2023), EMNLP (2023), ACL (2023)
+* **Area Chair/Action Editor**: ACL ARR 2024
+* **Reviewer**: NeurIPS (2022, 2023), ICML (2022, 2023, 2024), ICLR (2024), EMNLP (2023), ACL (2023)
 * **Teaching assistant**: Introduction to Natural Language processing (PKU, 2022 Fall), Natural Language processing (PKU, 2023 Fall)
