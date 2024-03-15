@@ -25,7 +25,7 @@ Education
 
 Selected Publications([Full List](https://scholar.google.com/citations?user=pLOm4rYAAAAJ&hl=en))
 ======
-* **TempCompass: A benchmark to evaluate the temporal perception ability of Video LLMs**
+* **TempCompass: Do Video LLMs Really Understand Videos?**
 
   **Yuanxin Liu**\*, Shicheng Li*, Yi Liu, Yuxiang Wang, Shuhuai Ren, Lei Li, Sishuo Chen, Xu Sun, Lu Hou
 
