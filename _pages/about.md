@@ -83,6 +83,30 @@ I received the degree of Master of Science in Engineering from the University of
 </div>
 </div>
 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2021</div><img src='images/mud.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Marginal Utility Diminishes: Exploring the Minimum Knowledge for BERT Knowledge Distillation](https://aclanthology.org/2021.acl-long.228/)
+
+**Yuanxin Liu**, Fandong Meng, Zheng Lin, Weiping Wang and Jie Zhou
+
+[**Paper**](https://aclanthology.org/2021.acl-long.228/) | [**Code**](https://github.com/llyx97/Marginal-Utility-Diminishes)
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NAACL 2022</div><img src='images/tamt.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[ROSITA: Refined BERT cOmpreSsion with InTegrAted techniques](https://arxiv.org/abs/2103.11367)
+
+**Yuanxin Liu**, Zheng Lin, Fengcheng Yuan
+
+[**Paper**](https://arxiv.org/abs/2103.11367) | [**Code**](https://github.com/llyx97/Rosita)
+</div>
+</div>
+
 # 🎖 Honors and Awards
 * **Outstanding Graduates of Beijing & UCAS**, 2022
 * **CAS Presidential Excellent Scholarship**, CAS, 2022
