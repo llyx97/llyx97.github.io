@@ -21,9 +21,9 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "LYuanxin Liu"
+  name             : "Yuanxin Liu"
   avatar           : "images/profile.jpg"
-  bio              : "Phd Student at Peking University"
+  bio              : ""
   location         : "Beijing, China"
   employer         :
   pubmed           : 
