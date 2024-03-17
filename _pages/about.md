@@ -34,7 +34,7 @@ I received the degree of Master of Science in Engineering from the University of
 * Pre-trained Language Model Compression
 
 
-# 📝 Publications 
+# 📝 Selected Publications ([Full List](https://scholar.google.com/citations?user=pLOm4rYAAAAJ&hl=en)) 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/tempcompass.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -96,7 +96,7 @@ I received the degree of Master of Science in Engineering from the University of
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NAACL 2022</div><img src='images/tamt.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2021</div><img src='images/ROSITA.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [ROSITA: Refined BERT cOmpreSsion with InTegrAted techniques](https://arxiv.org/abs/2103.11367)
@@ -104,6 +104,18 @@ I received the degree of Master of Science in Engineering from the University of
 **Yuanxin Liu**, Zheng Lin, Fengcheng Yuan
 
 [**Paper**](https://arxiv.org/abs/2103.11367) | [**Code**](https://github.com/llyx97/Rosita)
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2019</div><img src='images/mia.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Aligning visual regions and textual concepts for semantic-grounded image representations](https://papers.nips.cc/paper/2019/hash/9fe77ac7060e716f2d42631d156825c0-Abstract.html)
+
+Fenglin Liu\*, **Yuanxin Liu**\*, Xuancheng Ren\*, Xiaodong He, Xu Sun
+
+[**Paper**](https://papers.nips.cc/paper/2019/hash/9fe77ac7060e716f2d42631d156825c0-Abstract.html)
 </div>
 </div>
 
