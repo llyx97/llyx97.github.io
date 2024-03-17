@@ -12,21 +12,17 @@ I am a second-year PhD student at the Language Computing and Machine Learning Gr
 I received the degree of Master of Science in Engineering from the University of Chinese Academy of Sciences (UCAS), supervised by Prof. [Zheng Lin](https://teacher.ucas.ac.cn/~0023257).
 
 # Research Interests
-======
 * Vision and Language
 * Natural Language Processing
 * Pre-trained Language Model Compression
 
 # 📖 Education
-======
 * **Sept. 2022 - Now**: PhD student, majoring in Computer Software and Theory, Peking University.
 * **Sept. 2019 - Jun. 2022**: Master Student, majoring in Computer Applied Technology, Institute of Information Engineering (IIE), CAS & UCAS.
 * **Sept. 2015 - Jun. 2019**: Bachelor of Communication Engineering, Beijing University of Posts and Telecommunications.
 
 # 📝 Selected Publications ([Full List](https://scholar.google.com/citations?user=pLOm4rYAAAAJ&hl=en))
-======
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/tempcompass.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/tempcompass.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [TempCompass: Do Video LLMs Really Understand Videos?](https://arxiv.org/pdf/2403.00476.pdf)
@@ -35,7 +31,12 @@ I received the degree of Master of Science in Engineering from the University of
 
 [**Project**](https://llyx97.github.io/tempcompass/) | [**Code**](https://github.com/llyx97/TempCompass)
 </div>
-</div>
+</div> -->
+* **TempCompass: Do Video LLMs Really Understand Videos?**
+
+  **Yuanxin Liu**\*, Shicheng Li*, Yi Liu, Yuxiang Wang, Shuhuai Ren, Lei Li, Sishuo Chen, Xu Sun, Lu Hou
+
+  **Preprint** [[paper](https://arxiv.org/abs/2403.00476), [code](https://github.com/llyx97/TempCompass)]
 
 * **FETV: A Benchmark for Fine-Grained Evaluation of Open-Domain Text-to-Video Generation**
 
@@ -86,7 +87,6 @@ I received the degree of Master of Science in Engineering from the University of
   ***NeurIPS 2019*** [[paper](https://papers.nips.cc/paper/2019/hash/9fe77ac7060e716f2d42631d156825c0-Abstract.html)]
 
 # 🎖 Awards
-======
 * **Outstanding Graduates of Beijing & UCAS**, 2022
 * **CAS Presidential Excellent Scholarship**, CAS, 2022
 * **National Scholarship for Master Students**, Ministry of Education of P.R. China, 2021
@@ -95,11 +95,9 @@ I received the degree of Master of Science in Engineering from the University of
 * **Outstanding Graduates of Beijing**, Beijing Municipal Education Commission, 2019
 
 # 💻 Internship
-======
 * Research Intern at WeChat AI, Tencent Inc., Oct. 2020 - Jun. 2022. Mentor: [Fandong Meng](https://fandongmeng.github.io/)
 
 # Academic Service
-======
 * **Area Chair/Action Editor**: ACL ARR 2024
 * **Reviewer**: NeurIPS (2022, 2023), ICML (2022, 2023, 2024), ICLR (2024), EMNLP (2023), ACL (2023)
 * **Teaching assistant**: Introduction to Natural Language processing (PKU, 2022 Fall), Natural Language processing (PKU, 2023 Fall)
