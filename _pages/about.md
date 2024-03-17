@@ -43,7 +43,43 @@ I received the degree of Master of Science in Engineering from the University of
 
 **Yuanxin Liu**\*, Shicheng Li*, Yi Liu, Yuxiang Wang, Shuhuai Ren, Lei Li, Sishuo Chen, Xu Sun, Lu Hou
 
-[**Project**](https://llyx97.github.io/tempcompass/) | [**Code**](https://github.com/llyx97/TempCompass)
+[**Project**](https://llyx97.github.io/tempcompass/) | [**Paper**](https://arxiv.org/abs/2403.00476) | [**Code**](https://github.com/llyx97/TempCompass)
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2023 Track Datasets and Benchmarks</div><img src='images/fetv.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[FETV: A Benchmark for Fine-Grained Evaluation of Open-Domain Text-to-Video Generation](https://arxiv.org/abs/2311.01813)
+
+**Yuanxin Liu**, Lei Li, Shuhuai Ren, Rundong Gao, Shicheng Li, Sishuo Chen, Xu Sun and Lu Hou
+
+[**Paper**](https://arxiv.org/abs/2311.01813) | [**Code**](https://github.com/llyx97/FETV)
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2022</div><img src='images/srnet.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[A Win-win Deal: Towards Sparse and Robust Pre-trained Language Models](https://arxiv.org/abs/2210.05211)
+
+**Yuanxin Liu**, Fandong Meng, Zheng Lin, Jiangnan Li, Peng Fu, Yanan Cao, Weiping Wang and Jie Zhou
+
+[**Paper**](https://arxiv.org/abs/2210.05211) | [**Code**](https://github.com/llyx97/sparse-and-robust-PLM)
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NAACL 2022</div><img src='images/tamt.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Learning to Win Lottery Tickets in BERT Transfer via Task-agnostic Mask Training](https://aclanthology.org/2022.naacl-main.428/)
+
+**Yuanxin Liu**, Fandong Meng, Zheng Lin, Peng Fu, Yanan Cao, Weipinng Wang and Jie Zhou
+
+[**Paper**](https://aclanthology.org/2022.naacl-main.428/) | [**Code**](https://github.com/llyx97/TAMT) | [**Blog**](https://mp.weixin.qq.com/s/Wd_IWHqJnaonilyVI3pPGA)
 </div>
 </div>
 
