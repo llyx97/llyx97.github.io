@@ -1,100 +1,142 @@
 ---
 permalink: /
-title: "About Me"
-excerpt: "About me"
+title: ""
+excerpt: ""
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+{% if site.google_scholar_stats_use_cdn %}
+{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
+{% else %}
+{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
+{% endif %}
+{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
+
+<span class='anchor' id='about-me'></span>
+
 I am a second-year PhD student at the Language Computing and Machine Learning Group ([Lanco](https://lancopku.github.io/)), Institute of Computational Linguistics (National Key Laboratory for Multimedia Information Processing), School of Computer Science, Peking University. I am supervised by Prof. [Xu Sun](https://xusun26.github.io/). 
 
 I received the degree of Master of Science in Engineering from the University of Chinese Academy of Sciences (UCAS), supervised by Prof. [Zheng Lin](https://teacher.ucas.ac.cn/~0023257).
+
+<!-- My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
+
+
+<!-- # 🔥 News
+- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 
 # Research Interests
 * Vision and Language
 * Natural Language Processing
 * Pre-trained Language Model Compression
 
-# 📖 Education
-* **Sept. 2022 - Now**: PhD student, majoring in Computer Software and Theory, Peking University.
-* **Sept. 2019 - Jun. 2022**: Master Student, majoring in Computer Applied Technology, Institute of Information Engineering (IIE), CAS & UCAS.
-* **Sept. 2015 - Jun. 2019**: Bachelor of Communication Engineering, Beijing University of Posts and Telecommunications.
 
-# 📝 Selected Publications ([Full List](https://scholar.google.com/citations?user=pLOm4rYAAAAJ&hl=en))
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/tempcompass.png' alt="sym" width="100%"></div></div>
+# 📝 Selected Publications ([Full List](https://scholar.google.com/citations?user=pLOm4rYAAAAJ&hl=en)) 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/tempcompass.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [TempCompass: Do Video LLMs Really Understand Videos?](https://arxiv.org/pdf/2403.00476.pdf)
 
 **Yuanxin Liu**\*, Shicheng Li*, Yi Liu, Yuxiang Wang, Shuhuai Ren, Lei Li, Sishuo Chen, Xu Sun, Lu Hou
 
-[**Project**](https://llyx97.github.io/tempcompass/) | [**Code**](https://github.com/llyx97/TempCompass)
+[**Project**](https://llyx97.github.io/tempcompass/) | [**Paper**](https://arxiv.org/abs/2403.00476) | [**Code**](https://github.com/llyx97/TempCompass)
 </div>
-</div> -->
-* **TempCompass: Do Video LLMs Really Understand Videos?**
+</div>
 
-  **Yuanxin Liu**\*, Shicheng Li*, Yi Liu, Yuxiang Wang, Shuhuai Ren, Lei Li, Sishuo Chen, Xu Sun, Lu Hou
 
-  **Preprint** [[paper](https://arxiv.org/abs/2403.00476), [code](https://github.com/llyx97/TempCompass)]
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2023 Track Datasets and Benchmarks</div><img src='images/fetv.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
-* **FETV: A Benchmark for Fine-Grained Evaluation of Open-Domain Text-to-Video Generation**
+[FETV: A Benchmark for Fine-Grained Evaluation of Open-Domain Text-to-Video Generation](https://arxiv.org/abs/2311.01813)
 
-  **Yuanxin Liu**, Lei Li, Shuhuai Ren, Rundong Gao, Shicheng Li, Sishuo Chen, Xu Sun and Lu Hou
+**Yuanxin Liu**, Lei Li, Shuhuai Ren, Rundong Gao, Shicheng Li, Sishuo Chen, Xu Sun and Lu Hou
 
-  **NeurIPS 2023 Track Datasets and Benchmarks** [[paper](https://arxiv.org/abs/2311.01813), [code](https://github.com/llyx97/FETV)]
+[**Paper**](https://arxiv.org/abs/2311.01813) | [**Code**](https://github.com/llyx97/FETV)
+</div>
+</div>
 
-* **Compressing and Debiasing Vision-Language Pre-Trained Models for Visual Question Answering**
 
-  Qingyi Si*, **Yuanxin Liu**\*, Zheng Lin, Peng Fu, Weiping Wang
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2022</div><img src='images/srnet.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
-  **EMNLP 2023** [[paper](https://arxiv.org/abs/2210.14558), [code](https://github.com/PhoebusSi/Compress-Robust-VQA)]
+[A Win-win Deal: Towards Sparse and Robust Pre-trained Language Models](https://arxiv.org/abs/2210.05211)
 
-* **A Win-win Deal: Towards Sparse and Robust Pre-trained Language Models**   
-  **Yuanxin Liu**, Fandong Meng, Zheng Lin, Jiangnan Li, Peng Fu, Yanan Cao, Weiping Wang and Jie Zhou   
-  ***NeurIPS 2022*** [[paper](https://arxiv.org/abs/2210.05211), [code](https://github.com/llyx97/sparse-and-robust-PLM)]
+**Yuanxin Liu**, Fandong Meng, Zheng Lin, Jiangnan Li, Peng Fu, Yanan Cao, Weiping Wang and Jie Zhou
 
-* **COST-EFF: Collaborative Optimization of Spatial and Temporal Efficiency with Slenderized Multi-exit Language Models**   
-  Bowen Shen, Zheng Lin, **Yuanxin Liu**, Zhengxiao Liu, Lei Wang and Weiping Wang   
-  ***EMNLP 2022*** [[paper](https://arxiv.org/abs/2210.15523), [code](https://github.com/sbwww/COST-EFF)]
+[**Paper**](https://arxiv.org/abs/2210.05211) | [**Code**](https://github.com/llyx97/sparse-and-robust-PLM)
+</div>
+</div>
 
-* **Towards Robust Visual Question Answering: Making the Most of Biased Samples via Contrastive Learning**   
-  Qingyi Si, **Yuanxin Liu**, Fandong Meng, Zheng Lin, Peng Fu, Yanan Cao, Weiping Wang and Jie Zhou   
-  ***EMNLP Findings 2022*** [[paper](https://arxiv.org/abs/2210.04563), [code](https://github.com/PhoebusSi/MMBS)]   
 
-* **Language Prior Is Not the Only Shortcut: A Benchmark for Shortcut Learning in VQA**   
-  Qingyi Si, Fandong Meng, Mingyu Zheng, Zheng Lin, **Yuanxin Liu**, Peng Fu, Yanan Cao, Weiping Wang and Jie Zhou   
-  ***EMNLP Findings 2022*** [[paper](https://arxiv.org/abs/2210.04692), [code](https://github.com/PhoebusSi/VQA-VS)]   
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NAACL 2022</div><img src='images/tamt.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
-* **Learning to Win Lottery Tickets in BERT Transfer via Task-agnostic Mask Training**   
-  **Yuanxin Liu**, Fandong Meng, Zheng Lin, Peng Fu, Yanan Cao, Weipinng Wang and Jie Zhou   
-  ***NAACL 2022*** [[paper](https://aclanthology.org/2022.naacl-main.428/), [code](https://github.com/llyx97/TAMT), [blog](https://mp.weixin.qq.com/s/Wd_IWHqJnaonilyVI3pPGA)]
+[Learning to Win Lottery Tickets in BERT Transfer via Task-agnostic Mask Training](https://aclanthology.org/2022.naacl-main.428/)
 
-* **Marginal Utility Diminishes: Exploring the Minimum Knowledge for BERT Knowledge Distillation**   
-  **Yuanxin Liu**, Fandong Meng, Zheng Lin, Weiping Wang and Jie Zhou   
-  ***ACL 2021*** [[paper](https://aclanthology.org/2021.acl-long.228/), [code](https://github.com/llyx97/Marginal-Utility-Diminishes)]
+**Yuanxin Liu**, Fandong Meng, Zheng Lin, Peng Fu, Yanan Cao, Weipinng Wang and Jie Zhou
 
-* **ROSITA: Refined BERT cOmpreSsion with InTegrAted techniques**   
-  **Yuanxin Liu**, Zheng Lin, Fengcheng Yuan   
-  ***AAAI 2021*** [[paper](https://arxiv.org/abs/2103.11367), [code](https://github.com/llyx97/Rosita)]
+[**Paper**](https://aclanthology.org/2022.naacl-main.428/) | [**Code**](https://github.com/llyx97/TAMT) | [**Blog**](https://mp.weixin.qq.com/s/Wd_IWHqJnaonilyVI3pPGA)
+</div>
+</div>
 
-* **Generating paraphrase with topic as prior knowledge**   
-  **Yuanxin Liu**, Zheng Lin, Fenglin Liu, Qinyun Dai, Weiping Wang   
-  ***CIKM 2019*** [[paper](https://dl.acm.org/doi/10.1145/3357384.3358102)]
 
-* **Aligning visual regions and textual concepts for semantic-grounded image representations**   
-  Fenglin Liu\*, **Yuanxin Liu**\*, Xuancheng Ren\*, Xiaodong He, Xu Sun   
-  ***NeurIPS 2019*** [[paper](https://papers.nips.cc/paper/2019/hash/9fe77ac7060e716f2d42631d156825c0-Abstract.html)]
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2021</div><img src='images/mud.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
-# 🎖 Awards
+[Marginal Utility Diminishes: Exploring the Minimum Knowledge for BERT Knowledge Distillation](https://aclanthology.org/2021.acl-long.228/)
+
+**Yuanxin Liu**, Fandong Meng, Zheng Lin, Weiping Wang and Jie Zhou
+
+[**Paper**](https://aclanthology.org/2021.acl-long.228/) | [**Code**](https://github.com/llyx97/Marginal-Utility-Diminishes)
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2021</div><img src='images/ROSITA.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[ROSITA: Refined BERT cOmpreSsion with InTegrAted techniques](https://arxiv.org/abs/2103.11367)
+
+**Yuanxin Liu**, Zheng Lin, Fengcheng Yuan
+
+[**Paper**](https://arxiv.org/abs/2103.11367) | [**Code**](https://github.com/llyx97/Rosita)
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2019</div><img src='images/mia.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Aligning visual regions and textual concepts for semantic-grounded image representations](https://papers.nips.cc/paper/2019/hash/9fe77ac7060e716f2d42631d156825c0-Abstract.html)
+
+Fenglin Liu\*, **Yuanxin Liu**\*, Xuancheng Ren\*, Xiaodong He, Xu Sun
+
+[**Paper**](https://papers.nips.cc/paper/2019/hash/9fe77ac7060e716f2d42631d156825c0-Abstract.html)
+</div>
+</div>
+
+# 🎖 Honors and Awards
 * **Outstanding Graduates of Beijing & UCAS**, 2022
 * **CAS Presidential Excellent Scholarship**, CAS, 2022
 * **National Scholarship for Master Students**, Ministry of Education of P.R. China, 2021
 * **Merit Student**, UCAS, 2021
 * **IIE Presidential Special Award**, IIE, CAS, 2020
-* **Outstanding Graduates of Beijing**, Beijing Municipal Education Commission, 2019
+* **Outstanding Graduates of Beijing**, Beijing Municipal Education Commission, 2019 
 
-# 💻 Internship
+# 📖 Educations
+* **Sept. 2022 - Now**: PhD student, majoring in Computer Software and Theory, Peking University.
+* **Sept. 2019 - Jun. 2022**: Master Student, majoring in Computer Applied Technology, Institute of Information Engineering (IIE), CAS & UCAS.
+* **Sept. 2015 - Jun. 2019**: Bachelor of Communication Engineering, Beijing University of Posts and Telecommunications.
+
+<!-- # 💬 Invited Talks
+- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
+
+# 💻 Internships
 * Research Intern at WeChat AI, Tencent Inc., Oct. 2020 - Jun. 2022. Mentor: [Fandong Meng](https://fandongmeng.github.io/)
 
 # Academic Service
