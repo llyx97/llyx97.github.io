@@ -36,6 +36,17 @@ I received the degree of Master of Science in Engineering from the University of
 
 # 📝 Selected Publications ([Full List](https://scholar.google.com/citations?user=pLOm4rYAAAAJ&hl=en)) 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/t3.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Temporal Reasoning Transfer from Text to Video](https://arxiv.org/pdf/2410.06166)
+
+Lei Li*, **Yuanxin Liu**\*, Linli Yao, Peiyuan Zhang, Chenxin An, Lean Wang, Xu Sun, Lingpeng Kong, Qi Liu
+
+[**Project**](https://video-t3.github.io/) | [**Paper**](https://arxiv.org/abs/2410.06166) 
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2024 Findings</div><img src='images/tempcompass.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
