@@ -148,9 +148,10 @@ Fenglin Liu\*, **Yuanxin Liu**\*, Xuancheng Ren\*, Xiaodong He, Xu Sun
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
 # 💻 Internships
+* Research Intern at ByteDance Seed, July. 2024 - Feb. 2025.
 * Research Intern at WeChat AI, Tencent Inc., Oct. 2020 - Jun. 2022. Mentor: [Fandong Meng](https://fandongmeng.github.io/)
 
 # Academic Service
-* **Area Chair/Action Editor**: ACL ARR 2024
-* **Reviewer**: NeurIPS (2022, 2023), ICML (2022, 2023, 2024), ICLR (2024), EMNLP (2023), ACL (2023)
+* **Area Chair/Action Editor**: ACL ARR
+* **Reviewer**: NeurIPS (2022, 2023, 2024), ICML (2022, 2023, 2024), ICLR (2024, 2025), EMNLP (2023), ACL (2023), CVPR (2024, 2025), Computational Linguistics
 * **Teaching assistant**: Introduction to Natural Language processing (PKU, 2022 Fall), Natural Language processing (PKU, 2023 Fall)
