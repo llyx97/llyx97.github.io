@@ -29,7 +29,7 @@ I received the degree of Master of Science in Engineering from the University of
 - *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 
 # Research Interests
-* Vision and Language
+* Multimodal Large Language Models
 * Natural Language Processing
 * Pre-trained Language Model Compression
 
