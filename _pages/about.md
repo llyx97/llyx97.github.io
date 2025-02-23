@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a second-year PhD student at the Language Computing and Machine Learning Group ([Lanco](https://lancopku.github.io/)), Institute of Computational Linguistics (National Key Laboratory for Multimedia Information Processing), School of Computer Science, Peking University. I am supervised by Prof. [Xu Sun](https://xusun26.github.io/). 
+I am a third-year PhD student at the Language Computing and Machine Learning Group ([Lanco](https://lancopku.github.io/)), Institute of Computational Linguistics (National Key Laboratory for Multimedia Information Processing), School of Computer Science, Peking University. I am supervised by Prof. [Xu Sun](https://xusun26.github.io/). 
 
 I received the degree of Master of Science in Engineering from the University of Chinese Academy of Sciences (UCAS), supervised by Prof. [Zheng Lin](https://teacher.ucas.ac.cn/~0023257).
 
