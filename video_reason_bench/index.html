@@ -1,0 +1,1401 @@
+<!doctype html>
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="./Plug-and-Play Diffusion Features for Text-Driven Image-to-Image Translation_files/chalkduster" rel="stylesheet">
+<!-- <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐼</text></svg>"> -->
+<style>
+	@import url('https://fonts.cdnfonts.com/css/chalkduster');
+</style>
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="google-site-verification" content="eGDOZ_6azobM9Vcl7r072IFo1FJ-TfNvGkmz6YbLCLo" />
+
+	<!-- Bootstrap CSS -->
+	<link href="./html_pages/resources/bootstrap.min.css" rel="stylesheet">
+	<link href="./html_pages/resources/stylesheet.css" rel="stylesheet">
+	<script src="js/jquery-2.1.3.min.js"> </script>
+
+	<title>VideoReasonBench</title>
+</head>
+	
+<body data-new-gr-c-s-check-loaded="14.1110.0" data-gr-ext-installed="">
+	<header>
+		<nav>
+			<a class="h5 pt-1" style="margin-left: 10px; color: #fff !important;" href="#VideoReasonBench">VideoReasonBench</a>
+		</nav>
+		<nav>
+			<a href="#Abstract">Abstract</a>
+			<a href="#Overview">Overview</a>
+			<!-- <a href="#Demo Video">Demo Video</a> -->
+			<a href="#Leaderboard">Leaderboard</a>
+			<!-- <a href="#Error Analysis">Case Study</a> -->
+
+			<!-- Dropdown Menu -->
+			<div class="dropdown">
+				<a href="#Examples">VideoReasonBench Examples</a>
+				<div class="dropdown-content">
+					<a href="#Number">Number</a>
+					<a href="#Cup">Cup</a>
+					<a href="#Circle">Circle</a>
+					<a href="#File">File</a>
+					<a href="#Card">Card</a>
+					<a href="#Chip">Chip</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+		
+
+	<section class="jumbotron text-center pb-2" id="VideoReasonBench">
+		<div class="container">
+			<br><br><br>
+			<!-- Title with Icon -->
+			<h1 class="jumbotron-heading" style="font-size: 5.5rem; display: flex; align-items: center; justify-content: center; gap: 10px;">
+				<img src="./assets/figures/logo.png" alt="VideoReasonBench Icon" style="height: 5.5rem; width: auto;">
+				VideoReasonBench
+			</h1>
+			<!-- Subtitle -->
+			<h5 class="pt-1" style="font-size: 2rem; font-weight: normal">
+				Can MLLMs Perform Vision-Centric Complex Video Reasoning?
+			</h5>
+			<br><br>
+			<!-- Paper Link -->
+			<a href="https://llyx97.github.io/" style="font-size: 1.2rem; color: white !important;">Yuanxin Liu</a><sup>1,2</sup>,  
+			<a href="https://ouyangkun10.github.io/" style="font-size: 1.2rem; color: white !important;">Kun Ouyang</a><sup>1</sup>,  
+			<a href="https://teowu.github.io/" style="font-size: 1.2rem; color: white !important;">Haoning Wu</a><sup>2#</sup>,  
+			<a href="https://liuyi-pku.github.io/" style="font-size: 1.2rem; color: white !important;">Yi Liu</a><sup>1</sup>, 
+			<a href="https://www.lamda.nju.edu.cn/suil/" style="font-size: 1.2rem; color: white !important;">Lin Sui</a><sup>2</sup>, 
+
+			<br> 
+			<a href="https://leexinhao.github.io/" style="font-size: 1.2rem; color: white !important;">Xinhao Li</a><sup>3</sup>,  
+			<a href="https://openreview.net/profile?id=~Yan_Zhong2" style="font-size: 1.2rem; color: white !important;">Yan Zhong</a><sup>1</sup>,  
+			<a href="http://ycharles.moonshot.cn/" style="font-size: 1.2rem; color: white !important;">Y. Charles</a><sup>2</sup>
+			<a href="https://scholar.google.com/citations?user=Jv4LCj8AAAAJ&hl=en" style="font-size: 1.2rem; color: white !important;">Xinyu Zhou</a><sup>2*</sup>
+			<a href="https://xusun26.github.io/" style="font-size: 1.2rem; color: white !important;">Xu Sun</a><sup>1*</sup>
+
+			<!-- <br><br>
+			<a href="https://www.ntu.edu.sg/"><img class="paper-btn" src="./assets/ntu.svg" style="height: 80px; width: auto; background-color: #18191a;"></a>
+			<a href="https://www.cmu.edu/"><img class="paper-btn" src="./assets/cmu.svg" style="height: 80px; width: auto; background-color: #18191a;"></a> -->
+			<br><br>
+			<p class="affiliations">
+				<sup>1</sup>Peking University
+				<sup>2</sup>Moonshot AI
+				<sup>3</sup>Nanjing University<br>
+				<sup>#</sup>Project Lead
+				<sup>*</sup>Corresponding Author<br>
+			</p>
+			<br><br>
+			<!-- Paper and Dataset Links -->
+			<div style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
+				<!-- Paper Button -->
+				<a href="https://github.com/llyx97/video_reason_bench" 
+				   style="text-decoration: none; background: white; color: gray; padding: 10px 20px; border-radius: 50px; font-size: 1.2rem; border: 1px solid gray; display: flex; align-items: center; gap: 8px;">
+					<img src="./assets/figures/arxiv.png" alt="" style="height: 20px; width: auto;">
+					Paper (Coming Soon)
+				</a>
+				<!-- Dataset Button -->
+				<a href="https://huggingface.co/datasets/lyx97/reasoning_videos" 
+				   style="text-decoration: none; background: white; color: gray; padding: 10px 20px; border-radius: 50px; font-size: 1.2rem; border: 1px solid gray; display: flex; align-items: center; gap: 8px;">
+					<img src="./assets/figures/huggingface.png" alt="" style="height: 20px; width: auto;">
+					Dataset
+				</a>
+				<!-- Code Button -->
+				<a href="https://github.com/llyx97/video_reason_bench" 
+				   style="text-decoration: none; background: white; color: gray; padding: 10px 20px; border-radius: 50px; font-size: 1.2rem; border: 1px solid gray; display: flex; align-items: center; gap: 8px;">
+					<img src="./assets/figures/github.png" alt="" style="height: 20px; width: auto;">
+					Code
+				</a>
+			</div>
+			<br>
+			<br><br>
+			<br><br><br>
+		</div>
+	</section>
+
+
+	<div style="display: flex; justify-content: center; flex-wrap: wrap; margin-top: -65px; gap: 0;">
+		<div class="video-teaser-container">
+			<video playsinline autoplay="autoplay" loop="loop" muted="muted" type="video/mp4" class="video-teaser" src="./assets/samples/card.mp4"></video>
+			<div class="hover-overlay">
+				<p class="text-container">
+					<span class="title">Card</span>
+				</p>
+			</div>
+		</div>
+
+		<div class="video-teaser-container">
+			<video playsinline autoplay="autoplay" loop="loop" muted="muted" type="video/mp4" class="video-teaser" src="./assets/samples/chip.mp4"></video>
+			<div class="hover-overlay">
+				<p class="text-container">
+					<span class="title">Chip</span>
+				</p>
+			</div>
+		</div>
+		<div class="video-teaser-container">
+			<video playsinline autoplay="autoplay" loop="loop" muted="muted" type="video/mp4" class="video-teaser" src="./assets/samples/file.mp4"></video>
+			<div class="hover-overlay">
+				<p class="text-container">
+					<span class="title">File</span>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div style="display: flex; justify-content: center; flex-wrap: wrap; margin-top: -65px; gap: 0;">
+		<div class="video-teaser-container">
+			<video playsinline autoplay="autoplay" loop="loop" muted="muted" type="video/mp4" class="video-teaser" src="./assets/samples/number.mp4"></video>
+			<div class="hover-overlay">
+				<p class="text-container">
+					<span class="title">Number</span>
+				</p>
+			</div>
+		</div>
+		<div class="video-teaser-container">
+			<video playsinline autoplay="autoplay" loop="loop" muted="muted" type="video/mp4" class="video-teaser" src="./assets/samples/cup.mp4"></video>
+			<div class="hover-overlay">
+				<p class="text-container">
+					<span class="title">Cup</span>
+				</p>
+			</div>
+		</div>
+		<div class="video-teaser-container">
+			<video playsinline autoplay="autoplay" loop="loop" muted="muted" type="video/mp4" class="video-teaser" src="./assets/samples/grid.mp4"></video>
+			<div class="hover-overlay">
+				<p class="text-container">
+					<span class="title">Grid</span>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<section id="Abstract">
+		<hr class="mt-5">
+		<div class="container" style="margin-top: 30px">
+			<h1 class="text-center">Abstract</h1>
+			<br>
+			<p class="description text-left">
+				Recent studies have shown that long chain-of-thought (CoT) reasoning can significantly enhance the performance of large language models (LLMs) on complex tasks. However, this benefit is yet to be demonstrated in the domain of video understanding, since most existing benchmarks lack the reasoning depth required to demonstrate the advantages of extended CoT chains. While recent efforts have proposed benchmarks aimed at video reasoning, the tasks are often knowledge-driven and do not rely heavily on visual content. To bridge this gap, we introduce VideoReasonBench, a benchmark designed to evaluate vision-centric, complex video reasoning. To ensure visual richness and high reasoning complexity, each video in VideoReasonBench depicts a sequence of fine-grained operations on a latent state that is only visible in part of the video. The questions evaluate three escalating levels of video reasoning skills: recalling observed visual information, inferring the content of latent states, and predicting information beyond the video. Under such task setting, models have to precisely recall multiple operations in the video, and perform step-by-step reasoning to get correct final answers for these questions. Using VideoReasonBench, we comprehensively evaluate 18 state-of-the-art multimodal LLMs (MLLMs), finding that most perform poorly on complex video reasoning—e.g., GPT-4o achieves only 6.9% accuracy—while the thinking-enhanced Gemini-2.5-Pro significantly outperforms others with 56.0% accuracy. Our investigations on "test-time scaling'' further reveal that extended thinking budget, while offering none or minimal benefits on existing video benchmarks, is essential for improving the performance on VideoReasonBench.
+			</p>
+			<br>
+			<div class="image-viewer" style="margin-top: 20px; text-align: center;">
+				<img src="./assets/figures/bench_compare.png" alt="Example PDF as Image" style="width: 100%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+			</div>
+		</div>
+	</section>
+
+	<section id="Overview">
+		<hr class="mt-5">
+		<div class="container" style="margin-top: 30px">
+			<h1 class="text-center">Overview</h1>
+			<br>
+			<div class="image-viewer" style="margin-top: 20px; text-align: center;">
+				<img src="./assets/figures/overview.png" 
+					alt="Figure 2" 
+					style="width: 100%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+			</div>
+			<p class="description text-left">
+				<br>
+				<strong>Videos</strong>
+			</p>
+			<div class="insights" style="margin-top: 10px;">
+				<p style="margin-top: 15px;">
+					Each video features a latent state and a sequence of operations. The latent state is revealed either at the beginning or the end of the video. Throughout the rest of the video, the latent state remains invisible while the operations drive state transitions. There are six types of video demonstrations:
+				</p>
+				<ul style="line-height: 1.8;">
+					<li>
+						<strong>Number:</strong> Sliding number puzzle.
+					</li>
+					<li style="margin-top: 15px;">
+						<strong>Circle:</strong> A red circle moving on grid, flipping the color of black and white pieces.
+					</li>
+					<li style="margin-top: 15px;">
+						<strong>Cup:</strong> Swapping cups and the content beneath.
+					</li>
+					<li style="margin-top: 15px;">
+						<strong>File:</strong> Creating, deleting, copying, and moving files within/between paths.
+					</li>
+					<li style="margin-top: 15px;">
+						<strong>Card:</strong> Adding or removing cards to/from piles.
+					</li>
+					<li style="margin-top: 15px;">
+						<strong>Chip:</strong> Adding or removing chips to/from cups.
+					</li>
+				</ul>
+			</div>
+			<p class="description text-left">
+				<br>
+				<strong>Questions</strong>
+			</p>
+			<div class="insights" style="margin-top: 10px;">
+				<p style="margin-top: 15px;">
+					The questions assess video reasoning skills across three levels:
+				</p>
+				<ul style="line-height: 1.8;">
+					<li>
+						<strong>Level 1 (Recall):</strong> Precisely recalling the sequential visual observations from the video.
+					</li>
+					<li style="margin-top: 15px;">
+						<strong>Level 2 (Infer):</strong> Infer latent information that is not directly observable from the video.
+					</li>
+					<li style="margin-top: 15px;">
+						<strong>Level 3 (Predict):</strong> Predict new information beyond the video.
+					</li>
+				</ul>
+			</div>
+			
+		
+	</section>
+	
+	<section id="Leaderboard">
+		<hr class="mt-5">
+		<div class="container text-center" style="margin-top: 30px">
+			<h1>VideoReasonBench Leaderboard</h1>
+    <p class="description">To submit your model results, please email them to liuyuanxin@stu.pku.edu.cn. You may provide either the result in <a href="https://github.com/llyx97/video_reason_bench/blob/main/predictions/example_direct_eval.json">JSON format</a> or in <a href="https://github.com/llyx97/video_reason_bench/blob/main/predictions/example_vlmevalkit.xlsx">XLSX format</a> (see our <a href="https://github.com/llyx97/video_reason_bench/tree/main?tab=readme-ov-file#-quick-start">code repo</a> for how to evaluate).</p>
+
+    <div class="legend">
+        <div class="legend-item">
+            <div class="legend-color human"></div>
+            <span>Human Expert (240 sample subset)</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color opensource"></div>
+            <span>Open-Source</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color proprietary"></div>
+            <span>Proprietary</span>
+        </div>
+    </div>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Model</th>
+				<th>Act. Params</th>
+				<th>Think</th>
+				<th>Recall Order</th>
+				<th>Recall Count</th>
+				<th>Infer State</th>
+				<th>Compare State</th>
+				<th>Predict State</th>
+				<th>Predict Operation</th>
+				<th>Overall</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="human-row">
+				<td>Human</td>
+				<td>-</td>
+				<td>223.2s</td>
+				<td>87.5</td>
+				<td>90.0</td>
+				<td>80.0</td>
+				<td>75.0</td>
+				<td>67.5</td>
+				<td>42.5</td>
+				<td>73.8</td>
+			</tr>
+			<tr>
+				<td colspan="10" style="background-color: lightblue; font-weight: bold; text-align: left;"><strong>Proprietary Models</strong></td>
+			</tr>
+			<tr class="proprietary-row">
+				<td><a href="https://blog.google/products/gemini/gemini-2-5-pro-updates/" target="_blank">Gemini-2.5-Pro-0506</a></td>
+				<td>-</td>
+				<td><span style="color: green;">✓</span></td> <!-- checkmark -->
+				<td><strong>69.2</strong></td>
+				<td><strong>70.4</strong></td>
+				<td><strong>63.3</strong></td>
+				<td><strong>56.7</strong></td>
+				<td><strong>42.1</strong></td>
+				<td><strong>34.6</strong></td>
+				<td><strong>56.0</strong></td>
+			</tr>
+			<tr class="proprietary-row">
+				<td><a href="https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/" target="_blank">Gemini-2.5-Flash-0417</a></td>
+				<td>-</td>
+				<td><span style="color: green;">✓</span></td> <!-- checkmark -->
+				<td>44.6</td>
+				<td>41.7</td>
+				<td>27.9</td>
+				<td>27.1</td>
+				<td>13.8</td>
+				<td>9.6</td>
+				<td>27.4</td>
+			</tr>
+			<tr class="proprietary-row">
+				<td><a href="https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/" target="_blank">Gemini-2.5-Flash-0417</a></td>
+				<td>-</td>
+				<td><span style="color: red;">✗</span></td> <!-- crossmark -->
+				<td>22.5</td>
+				<td>34.2</td>
+				<td>19.6</td>
+				<td>20.4</td>
+				<td>8.8</td>
+				<td>7.1</td>
+				<td>18.8</td>
+			</tr>
+			<tr class="proprietary-row">
+				<td><a href="https://github.com/ByteDance-Seed/Seed1.5-VL" target="_blank">Seed1.5-VL</a></td>
+				<td>20B</td>
+				<td><span style="color: green;">✓</span></td> <!-- checkmark -->
+				<td>24.2</td>
+				<td>27.1</td>
+				<td>3.8</td>
+				<td>7.9</td>
+				<td>3.8</td>
+				<td>2.1</td>
+				<td>11.5</td>
+			</tr>
+			<tr class="proprietary-row">
+				<td><a href="https://openai.com/index/introducing-o3-and-o4-mini/" target="_blank">o4-mini</a></td>
+				<td>-</td>
+				<td><span style="color: green;">✓</span></td> <!-- checkmark -->
+				<td>14.2</td>
+				<td>20.4</td>
+				<td>7.1</td>
+				<td>11.7</td>
+				<td>6.2</td>
+				<td>4.6</td>
+				<td>10.7</td>
+			</tr>
+			<tr class="proprietary-row">
+				<td><a href="https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/" target="_blank">Gemini-2.0-Flash</a></td>
+				<td>-</td>
+				<td><span style="color: red;">✗</span></td> <!-- crossmark -->
+				<td>18.3</td>
+				<td>22.5</td>
+				<td>6.7</td>
+				<td>6.7</td>
+				<td>5.0</td>
+				<td>3.3</td>
+				<td>10.4</td>
+			</tr>
+			<tr class="proprietary-row">
+				<td><a href="https://openai.com/index/hello-gpt-4o/" target="_blank">GPT-4o</a></td>
+				<td>-</td>
+				<td><span style="color: red;">✗</span></td> <!-- crossmark -->
+				<td>14.2</td>
+				<td>15.8</td>
+				<td>4.2</td>
+				<td>6.2</td>
+				<td>0.8</td>
+				<td>0.0</td>
+				<td>6.9</td>
+			</tr>
+			
+			<tr>
+				<td colspan="10" style="background-color: lightblue; font-weight: bold; text-align: left;"><strong>Open-source Models</strong></td>
+			</tr>
+			<tr>
+				<td colspan="10" style="color: lightgray; font-style: italic; text-align: left;"><em>Flagship Models</em></td>
+			</tr>
+			<tr class="opensource-row">
+				<td><a href="https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct" target="_blank">Qwen2.5-VL</a></td> <!-- This matches the 72B version -->
+				<td>72B</td>
+				<td><span style="color: red;">✗</span></td> <!-- crossmark -->
+				<td>12.5</td>
+				<td>17.1</td>
+				<td>4.2</td>
+				<td>4.2</td>
+				<td>2.9</td>
+				<td>2.1</td>
+				<td>7.2</td>
+			</tr>
+			<tr class="opensource-row">
+				<td><a href="https://huggingface.co/OpenGVLab/InternVL3-78B" target="_blank">InternVL3</a></td>
+				<td>78B</td>
+				<td><span style="color: red;">✗</span></td> <!-- crossmark -->
+				<td>11.2</td>
+				<td>14.6</td>
+				<td>0.8</td>
+				<td>2.1</td>
+				<td>3.8</td>
+				<td>2.1</td>
+				<td>5.8</td>
+			</tr>
+			<tr class="opensource-row">
+				<td><a href="https://huggingface.co/lmms-lab/LLaVA-Video-72B-Qwen2" target="_blank">LLaVA-Video</a></td>
+				<td>72B</td>
+				<td><span style="color: red;">✗</span></td> <!-- crossmark -->
+				<td>0.0</td>
+				<td>0.0</td>
+				<td>0.0</td>
+				<td>0.0</td>
+				<td>0.4</td>
+				<td>0.0</td>
+				<td>0.1</td>
+			</tr>
+			<tr class="opensource-row">
+				<td><a href="https://huggingface.co/lmms-lab/llava-onevision-qwen2-72b-ov-sft" target="_blank">LLaVA-OneVision</a></td>
+				<td>72B</td>
+				<td><span style="color: red;">✗</span></td> <!-- crossmark -->
+				<td>0.0</td>
+				<td>0.0</td>
+				<td>0.0</td>
+				<td>0.0</td>
+				<td>0.8</td>
+				<td>0.0</td>
+				<td>0.1</td>
+			</tr>
+
+			<tr>
+				<td colspan="10" style="color: lightgray; font-style: italic; text-align: left;"><em>Efficient Models</em></td>
+			</tr>
+			<tr class="opensource-row">
+				<td><a href="https://huggingface.co/moonshotai/Kimi-VL-A3B-Instruct" target="_blank">Kimi-VL-A3B-Instruct</a></td>
+				<td>3B</td>
+				<td><span style="color: red;">✗</span></td> <!-- crossmark -->
+				<td>1.7</td>
+				<td>3.3</td>
+				<td>1.2</td>
+				<td>0.4</td>
+				<td>1.7</td>
+				<td>0.0</td>
+				<td>1.4</td>
+			</tr>
+			<tr class="opensource-row">
+				<td><a href="https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct" target="_blank">Qwen2.5-VL</a></td> <!-- Note: This is 7B -->
+				<td>7B</td>
+				<td><span style="color: red;">✗</span></td> <!-- crossmark -->
+				<td>3.8</td>
+				<td>0.8</td>
+				<td>0.4</td>
+				<td>0.0</td>
+				<td>2.1</td>
+				<td>0.8</td>
+				<td>1.3</td>
+			</tr>
+			<tr class="opensource-row">
+				<td><a href="https://huggingface.co/openbmb/MiniCPM-o-2_6" target="_blank">MiniCPM-o 2.6</a></td>
+				<td>8B</td>
+				<td><span style="color: red;">✗</span></td> <!-- crossmark -->
+				<td>1.2</td>
+				<td>0.4</td>
+				<td>0.4</td>
+				<td>0.8</td>
+				<td>1.2</td>
+				<td>0.4</td>
+				<td>0.8</td>
+			</tr>
+			<tr class="opensource-row">
+				<td><a href="https://huggingface.co/openbmb/MiniCPM-V-2_6" target="_blank">MiniCPM-V 2.6</a></td>
+				<td>8B</td>
+				<td><span style="color: red;">✗</span></td> <!-- crossmark -->
+				<td>2.1</td>
+				<td>0.4</td>
+				<td>0.4</td>
+				<td>0.0</td>
+				<td>1.2</td>
+				<td>0.4</td>
+				<td>0.8</td>
+			</tr>
+			<tr class="opensource-row">
+				<td><a href="https://huggingface.co/OpenGVLab/InternVL3-8B" target="_blank">InternVL3</a></td>
+				<td>8B</td>
+				<td><span style="color: red;">✗</span></td> <!-- crossmark -->
+				<td>0.4</td>
+				<td>0.8</td>
+				<td>0.0</td>
+				<td>0.4</td>
+				<td>1.7</td>
+				<td>0.0</td>
+				<td>0.6</td>
+			</tr>
+			<tr class="opensource-row">
+				<td><a href="https://huggingface.co/lmms-lab/llava-onevision-qwen2-7b-ov" target="_blank">LLaVA-OneVision</a></td>
+				<td>7B</td>
+				<td><span style="color: red;">✗</span></td> <!-- crossmark -->
+				<td>0.0</td>
+				<td>0.0</td>
+				<td>0.4</td>
+				<td>0.0</td>
+				<td>0.4</td>
+				<td>0.8</td>
+				<td>0.3</td>
+			</tr>
+			<tr class="opensource-row">
+				<td><a href="https://huggingface.co/lmms-lab/LLaVA-Video-7B-Qwen2" target="_blank">LLaVA-Video</a></td>
+				<td>7B</td>
+				<td><span style="color: red;">✗</span></td> <!-- crossmark -->
+				<td>0.0</td>
+				<td>0.0</td>
+				<td>0.0</td>
+				<td>0.0</td>
+				<td>0.0</td>
+				<td>0.0</td>
+				<td>0.0</td>
+			</tr>
+			<tr class="opensource-row">
+				<td><a href="https://huggingface.co/mPLUG/mPLUG-Owl3-7B-240728" target="_blank">mPLUG-Owl3</a></td>
+				<td>7B</td>
+				<td><span style="color: red;">✗</span></td> <!-- crossmark -->
+				<td>0.0</td>
+				<td>0.0</td>
+				<td>0.0</td>
+				<td>0.0</td>
+				<td>0.0</td>
+				<td>0.0</td>
+				<td>0.0</td>
+			</tr>
+		</tbody>
+	</table>
+
+		</div>
+	</section>
+
+
+
+	<!-- <section id="Demo Video">
+		<hr class="mt-5">
+		<div class="container" style="margin-top: 30px">
+			<h1 class="text-center">Demo Video</h1>
+			<br>
+			<div class="video-viewer" style="margin-top: 20px; text-align: center;">
+				<video controls autoplay muted="false" style="width: 80%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+					<source src="./assets/figures/demo.mp4" type="video/mp4">
+				</video>
+			</div>
+		</div>
+	</section> -->
+
+	<section id="Statistics">
+		<hr class="mt-5">
+		<div class="container" style="margin-top: 30px">
+			<h1 class="text-center">Statistics</h1>
+			<!-- <div style="margin-top: 15px;">
+				<h3><strong>Perception Questions</strong></h3>
+				<ul style="line-height: 1.8;">
+					<li>
+						<strong>1) Optical Character Recognition (OCR):</strong> Questions that require extracting visual information, including formulas, data, charts, and handwritten content.
+					</li>
+					<li>
+						<strong>2) Automatic Speech Recognition (ASR):</strong> Questions that assess accurate transcription of spoken content.
+					</li>
+				</ul>
+			</div>
+			<div style="margin-top: 20px;">
+				<h3><strong>Comprehension Questions</strong></h3>
+				<ul style="line-height: 1.8;">
+					<li>
+						<strong>1) Concept Comprehension (CC):</strong> Questions that test conceptual understanding using multiple-answer multiple-choice (MAMC) format, presenting 4-10 statements with multiple possible correct answers.
+					</li>
+					<li>
+						<strong>2) Problem-solving Strategy Comprehension (PSC):</strong> Questions that assess understanding by presenting variants of video example questions with different values. These questions require applying the same reasoning process demonstrated in the video to new calculations.
+					</li>
+				</ul>
+			</div>
+			<div style="margin-top: 20px;">
+				<h3><strong>Adaptation Questions</strong></h3>
+				<ul style="line-height: 1.8;">
+					<li>
+						<strong>1) Case Study Analysis (CSA):</strong> Questions that test concept application to novel real-world scenarios.
+					</li>
+					<li>
+						<strong>2) Problem-solving Strategy Adaptation (PSA):</strong> Questions that assess the ability to modify learned solution methods for new problems by identifying key similarities and differences between examples and new scenarios.
+					</li>
+				</ul>
+			</div>
+			<p style="margin-top: 30px;">
+				We present 6 QA samples from VideoReasonBench as follows:
+			</p> -->
+			<br>
+			<div class="image-viewer-container" style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
+				<div class="image-viewer">
+				  <img src="./assets/figures/statistics_fig.png" 
+					   alt="Statistics" 
+					   style="width: 100%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+				</div>
+				<div class="image-viewer">
+				  <img src="./assets/figures/statistics_tab.png" 
+					   alt="Statistics" 
+					   style="width: 100%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- <section id="Annotation Pipeline">
+		<hr class="mt-5">
+		<div class="container" style="margin-top: 30px">
+			<h1 class="text-center">Annotation Pipeline</h1>
+			<br>
+			<div class="video-viewer" style="margin-top: 20px; text-align: center;">
+				<video controls autoplay muted="false" style="width: 80%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+					<source src="./assets/figures/pipeline_video.mp4" type="video/mp4">
+				</video>
+			</div>
+		</div>
+	</section> -->
+	
+	<!-- <section id="Error Analysis">
+		<hr class="mt-5">
+		<div class="container" style="margin-top: 30px">
+			<h1 class="text-center">Error Analysis</h1>
+			<br>
+			<div class="image-viewer" style="margin-top: 20px; text-align: center;">
+				<img src="./assets/figures/error_analysis.png" 
+					alt="Figure 3" 
+					style="width: 50%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+			</div>    
+		</div>
+	</section>
+
+	<section id="Error Examples in Adaptation track">
+		<hr class="mt-5">
+		<div class="container" style="margin-top: 30px">
+			<h1 class="text-center">Error Examples in Adaptation track</h1>
+			<br>
+			<div class="image-viewer" style="margin-top: 20px; text-align: center;">
+				<img src="./assets/figures/error_case_adaptation.png" 
+					alt="Figure 3" 
+					style="width: 80%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+			</div>    
+		</div>
+	</section>
+
+	<section id="Wrong-to-Right Examples in Adaptation track">
+		<hr class="mt-5">
+		<div class="container" style="margin-top: 30px">
+			<h1 class="text-center">Wrong-to-Right Examples in Adaptation track</h1>
+			<br>
+			<div class="image-viewer" style="margin-top: 20px; text-align: center;">
+				<img src="./assets/figures/wrongtoright.png" 
+					alt="Figure 3" 
+					style="width: 80%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+			</div>    
+		</div>
+	</section> -->
+
+	
+	<section id="Number">
+		<hr class="mt-5">
+
+		<div class="container text-center" style="margin-top: 30px">
+			<h1>VideoReasonBench Examples</h1>
+			<br>
+			<br>
+			<!-- Section Title -->
+			<h2 class="section-title">VideoReasonBench Examples - Number</h2>
+			<video id="clickVideo" class="video-teaser" src="./assets/samples/number.mp4" type="video/mp4" controls></video>
+
+			<script>
+				const video = document.getElementById('clickVideo');
+
+				// 可选：初始不显示控制条
+				video.removeAttribute('autoplay');
+				video.removeAttribute('muted');
+				video.removeAttribute('loop');
+				video.removeAttribute('playsinline');
+
+				// 点击视频区域时播放或暂停
+				video.addEventListener('click', () => {
+					if (video.paused) {
+					video.play();
+					} else {
+					video.pause();
+					}
+				});
+			</script>
+	
+			<!-- Question Tracks -->
+			<p class="description text-left">
+				<br>
+				<strong>Task Description:</strong> The video presents a sliding puzzle on a 3x3 board. The board is filled with numbered squares, with one empty space. Initially, all numbered squares are visually masked with a blue overlay. Then, the puzzle undergoes a series of movements-only the squares adjacent to the empty space can be shifted into it. The video ends by showing the final arrangement of the numbers on the board. Please carefully watch the video and answer the following question:
+			</p>
+
+			<div class="tracks-row flex" style="margin-top: 20px;">
+				<!-- Recall Order -->
+				<div class="track">
+					<div class="track-title recall_order">Recall Order</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>What are the 3rd to 5th blue squares being moved? For each moved blue square, provide the following details:</p>
+						<p>The order in which it was moved (e.g., 1st, 2nd, 3rd, etc)</p>
+						<p>The coordinates before it was moved (e.g., (a,1), (c,2), etc)</p>
+						<p>The direction it was moved (e.g., left, right, up, down)</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>3rd: (b,2) up, 4th: (c,2) up, 5th: (c,3) left</p>
+					</div>
+				</div>
+				
+				<!-- Recall Count -->
+				<div class="track">
+					<div class="track-title recall_count">Recall Count</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>How many times was the 'downward' move performed in the video? For each occurrence, provide the coordinate of the square (e.g., (a,1), (c,2)...) before the move.</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>1: (a,3)</p>
+					</div>
+				</div>
+
+				<!-- Infer State -->
+				<div class="track">
+					<div class="track-title infer_state">Infer State</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>Assuming the empty square is represented by '0', what is the arrangement of numbers on the board at the start of the video? Provide the coordinates of each square along with the corresponding number (e.g., (a,1): 3, (a,2): 0, (b,1): 1, (b,2): 2).</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>(a,1): 2, (a,2): 1, (a,3): 7, (b,1): 4, (b,2): 3, (b,3): 0, (c,1): 6, (c,2): 5, (c,3): 8</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="tracks-row flex" style="margin-top: 20px;">
+				<!-- Compare State -->
+				<div class="track">
+					<div class="track-title compare_state">Compare State</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>Assuming the empty square is represented by '0', compare the number arrangements on the board at the start and end of the video. What are the squares where the numbers differ between the two boards? Provide their coordinates along with the corresponding number at the start of the video (e.g., (a,1): 3, (b,1): 1).</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>(a,2): 1, (a,3): 7, (b,2): 3, (b,3): 0, (c,2): 5, (c,3): 8</p>
+					</div>
+				</div>
+				<!-- Predict State -->
+				<div class="track">
+					<div class="track-title predict_state">Predict State</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>If the arrangement of numbers on the board is currently in the same state as it was at the start of the video, and the following moves are executed: `rightward, leftward, upward`, what will be the arrangement of numbers on the board? Assume that the empty square is represented by '0'. Provide the coordinates of each square along with the corresponding number (e.g., (a,1): 3, (a,2): 0, (b,1): 1, (b,2): 2).</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>(a,1): 2, (a,2): 1, (a,3): 7, (b,1): 4, (b,2): 3, (b,3): 8, (c,1): 6, (c,2): 5, (c,3): 0</p>
+					</div>
+				</div>
+				<!-- Compare State -->
+				<div class="track">
+					<div class="track-title predict_operation">Predict Operation</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>If the arrangement of numbers on the board is currently in the same state as it was at the start of the video, what sequence of moves (left, right, up, down) should be executed to achieve the desired number arrangement: `(a,1): 2, (a,2): 1, (a,3): 7, (b,1): 4, (b,2): 5, (b,3): 3, (c,1): 6, (c,2): 8, (c,3): 0`? Assume that the empty square is represented by '0'. Note that moves cannot push any square beyond the board boundary.</p>
+						<p>{Answer Prompt}</p>
+					</div>
+				</div>
+			</div>
+			<p class="description text-left">
+				<br>
+				<strong>Answer Prompt:</strong> Provide a summary of the final answer after 'Final Answer:'
+			</p>
+		</div>
+	</section>
+	<!-- <hr class="mt-5"> -->
+
+	<section id="Cup">
+		<hr class="mt-5">
+
+		<div class="container text-center" style="margin-top: 30px">
+			<!-- Section Title -->
+			<h2 class="section-title">VideoReasonBench Examples - Cup</h2>
+			<video id="clickVideo" class="video-teaser" src="./assets/samples/cup_full.mp4" type="video/mp4" controls></video>
+
+			<script>
+				const video = document.getElementById('clickVideo');
+
+				// 可选：初始不显示控制条
+				video.removeAttribute('autoplay');
+				video.removeAttribute('muted');
+				video.removeAttribute('loop');
+				video.removeAttribute('playsinline');
+
+				// 点击视频区域时播放或暂停
+				video.addEventListener('click', () => {
+					if (video.paused) {
+					video.play();
+					} else {
+					video.pause();
+					}
+				});
+			</script>
+	
+			<!-- Question Tracks -->
+			<p class="description text-left">
+				<br>
+				<strong>Task Description:</strong>The video presents a 'Tricky Cup' puzzle on a 3x3 board. The board is filled with blue cups, each hiding either a yellow coin or nothing underneath. At the start, all cups are briefly lifted to reveal what's beneath them. Then, the cups begin a series of moves\u2014each move swaps the positions of two cups, along with their hidden contents. Please carefully watch the video and answer the following question:
+			</p>
+
+			<div class="tracks-row flex" style="margin-top: 20px;">
+				<!-- Recall Order -->
+				<div class="track">
+					<div class="track-title recall_order">Recall Order</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>Assume that each time two cups swap their positions, it counts as one move. What are the 2nd to 4th moves shown in the video? For each move, provide the move number and the coordinates of the two cups that swapped positions. Format your response like this: 1st: (a1, b2), 2nd: (c2, b1), 3rd: (a3, c1).</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>2nd: (a2, c2), 3rd: (b2, c1), 4th: (b1, c3)</p>
+					</div>
+				</div>
+				
+				<!-- Recall Count -->
+				<div class="track">
+					<div class="track-title recall_count">Recall Count</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>How many times were the cups in the row 'b' involved in the swaps? For each instance, provide the coordinate(s) of the cup(s) before the swap occurred. Format your response like this: 1st: a1, 2nd: a3, 3rd: (a1,a2) (Use a single coordinate for individual cups, or a tuple for multiple cups involved in the same swap.)</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>1st: b2, 2nd: b2, 3rd: b1</p>
+					</div>
+				</div>
+
+				<!-- Infer State -->
+				<div class="track">
+					<div class="track-title infer_state">Infer State</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>What are the positions of all the coins at the end of the video? Provide the coordinates of each coin (e.g., a2, b1, c3).</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>a2, b1, c1, c3</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="tracks-row flex" style="margin-top: 20px;">
+				<!-- Compare State -->
+				<div class="track">
+					<div class="track-title compare_state">Compare State</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>Compare the distribution of contents beneath the cups at the start and end of the video. What are the positions where the contents beneath the cups differ between the two boards? Provide their coordinates along with the corresponding content at the end of the video. Format your response like this: a1: empty, b3: coin.</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>a1: empty, a2: coin, c1: coin, c2: empty</p>
+					</div>
+				</div>
+				<!-- Predict State -->
+				<div class="track">
+					<div class="track-title predict_state">Predict State</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>If the distribution of coins on the board is currently in the same state as it was at the end of the video, and the following cup swaps are executed in order: `(a2, b2), (b2, b3), (b2, c2), (b2, b3), (a2, c3)`, what will be the new distribution of the coins? Provide the coordinates of the coins (e.g., a1, b2).</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>a2, b1, b2, c1</p>
+					</div>
+				</div>
+				<!-- Predict Operation -->
+				<div class="track">
+					<div class="track-title predict_operation">Predict Operation</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>If the distribution of coins on the board is currently in the same state as it was at the end of the video, what sequence of cup swaps should be executed to achieve the desired distribution of coins: `b1, c1, c2, c3`? Format your response as a list of coordinate pairs, such as: (a1, b2), (c3, b1). Each pair represents a single swap between two cups.</p>
+						<p>{Answer Prompt}</p>
+					</div>
+				</div>
+			</div>
+			<p class="description text-left">
+				<br>
+				<strong>Answer Prompt:</strong> Provide a summary of the final answer after 'Final Answer:'
+			</p>
+		</div>
+	</section>
+
+	<section id="Circle">
+		<hr class="mt-5">
+
+		<div class="container text-center" style="margin-top: 30px">
+			<!-- Section Title -->
+			<h2 class="section-title">VideoReasonBench Examples - Circle</h2>
+			<video id="clickVideo" class="video-teaser" src="./assets/samples/grid.mp4" type="video/mp4" controls></video>
+
+			<script>
+				const video = document.getElementById('clickVideo');
+
+				// 可选：初始不显示控制条
+				video.removeAttribute('autoplay');
+				video.removeAttribute('muted');
+				video.removeAttribute('loop');
+				video.removeAttribute('playsinline');
+
+				// 点击视频区域时播放或暂停
+				video.addEventListener('click', () => {
+					if (video.paused) {
+					video.play();
+					} else {
+					video.pause();
+					}
+				});
+			</script>
+	
+			<!-- Question Tracks -->
+			<p class="description text-left">
+				<br>
+				<strong>Task Description:</strong> The video presents a 3x3 grid. At the beginning of the video, all positions on the grid are filled with either a black or white piece. Then, these pieces are visually hidden but still remain in their original positions. A red circle then moves across the grid. Each time the red circle passes by a position on the grid (excluding the starting position), the color of the piece at that position *and* the colors of its immediate orthogonal neighbors (up, down, left, and right) are flipped: black becomes white, and white becomes black. Note that diagonal neighbors are *not* affected. Neighbors are only considered if they exist within the grid's boundaries. Please carefully watch the video and answer the following question:
+			</p>
+
+			<div class="tracks-row flex" style="margin-top: 20px;">
+				<!-- Recall Order -->
+				<div class="track">
+					<div class="track-title recall_order">Recall Order</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>Assume that each time the red circle moves from one grid intersection to an adjacent one (horizontally or vertically), it counts as one move. What are the directions (left, right, up, down) of the 2nd to 3rd moves made by the red circle in the video? List them in order.:</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>down, down</p>
+					</div>
+				</div>
+				
+				<!-- Recall Count -->
+				<div class="track">
+					<div class="track-title recall_count">Recall Count</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>Assume that each time the red circle moves from one grid intersection to an adjacent one (horizontally or vertically), it counts as one move. Given the movement direction `left`, how many times does the red circle perform this move? For each occurrence, provide the coordinate of the position before the move (e.g., (a,1), (c,2), etc).</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>2: (a,2), (c,2)</p>
+					</div>
+				</div>
+
+				<!-- Infer State -->
+				<div class="track">
+					<div class="track-title infer_state">Infer State</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>What is the arrangement of the black and white pieces on the grid at the end of the video? Provide each piece's coordinates and color using the format: (column, row): color (e.g., (a,1): black, (c,2): white).</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>(a, 0): black, (a, 1): black, (a, 2): black, (b, 0): black, (b, 1): white, (b, 2): black, (c, 0): white, (c, 1): white, (c, 2): black</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="tracks-row flex" style="margin-top: 20px;">
+				<!-- Compare State -->
+				<div class="track">
+					<div class="track-title compare_state">Compare State</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>Assume that each time the red circle moves from one grid intersection to an adjacent one (horizontally or vertically), it counts as one move. Compare the arrangement of black and white pieces on the grid at the start and end of the video. What are the coordinates where the piece color differ between the two grids? Provide these coordinates along with the corresponding piece color at the end of the video, using the format: (column, row): color (e.g., (a,1): black, (c,2): white).</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>(a,0): black, (a,2): black, (b,0): black, (c,2): black8</p>
+					</div>
+				</div>
+				<!-- Predict State -->
+				<div class="track">
+					<div class="track-title predict_state">Predict State</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>Assume that each time the red circle moves from one grid intersection to an adjacent one (horizontally or vertically), it counts as one move. If the arrangement of black and white pieces and the position of the red circle on the grid is currently in the same state as it was at the end of the video, and the following moves are executed: `right, left, up, left, right`, what will be the arrangement of black and white pieces on the grid? Provide each piece's coordinates and color using the format: (column, row): color (e.g., (a,1): black; (c,2): white).</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>(a,0): white, (a,1): black, (a,2): black, (b,0): white, (b,1): white, (b,2): white, (c,0): white, (c,1): white, (c,2): black</p>
+					</div>
+				</div>
+				<!-- Predict Operation -->
+				<div class="track">
+					<div class="track-title predict_operation">Predict Operation</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>Assume that each time the red circle moves from one grid intersection to an adjacent one (horizontally or vertically), it counts as one move. The red circle cannot move beyond the grid boundary. If the arrangement of black and white pieces and the position of the red circle on the grid is currently in the same state as it was at the end of the video, what sequence of moves (left, right, up, down) should be executed by the red circle to achieve the desired arrangement of black and white pieces: `(a,0): black, (a,1): white, (a,2): black, (b,0): black, (b,1): black, (b,2): black, (c,0): black, (c,1): black, (c,2): white`? List them in order.</p>
+						<p>{Answer Prompt}</p>
+					</div>
+				</div>
+			</div>
+			<p class="description text-left">
+				<br>
+				<strong>Answer Prompt:</strong> Provide a summary of the final answer after 'Final Answer:'
+			</p>
+		</div>
+	</section>
+
+	<section id="File">
+		<hr class="mt-5">
+
+		<div class="container text-center" style="margin-top: 30px">
+			<!-- Section Title -->
+			<h2 class="section-title">VideoReasonBench Examples - File</h2>
+			<video id="clickVideo" class="video-teaser" src="./assets/samples/file_full.mp4" type="video/mp4" controls></video>
+
+			<script>
+				const video = document.getElementById('clickVideo');
+
+				// 可选：初始不显示控制条
+				video.removeAttribute('autoplay');
+				video.removeAttribute('muted');
+				video.removeAttribute('loop');
+				video.removeAttribute('playsinline');
+
+				// 点击视频区域时播放或暂停
+				video.addEventListener('click', () => {
+					if (video.paused) {
+					video.play();
+					} else {
+					video.pause();
+					}
+				});
+			</script>
+	
+			<!-- Question Tracks -->
+			<p class="description text-left">
+				<br>
+				<strong>Task Description:</strong> The video demonstrates a series of file manipulation commands executed in the Linux command line. To ensure accurate understanding, note these assumptions: 
+				<br>`touch` commands: All files created by `touch` do not exist in the target directory prior to the command's execution.
+				<br>`rm -r` commands: All files deleted by `rm -r` do exist in the target directory prior to the command's execution.
+				<br>`cp` and `mv` commands: All source files used by `cp` and `mv` do exist in the source directory prior to the command's execution. The destination path for `cp` and `mv` commands does not contain the target files prior to the command.
+				<br>Please carefully watch the video and answer the following question:
+			</p>
+
+			<div class="tracks-row flex" style="margin-top: 20px;">
+				<!-- Recall Order -->
+				<div class="track">
+					<div class="track-title recall_order">Recall Order</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>What are the 1st to 3rd `touch` commands shown in the video? Provide the order of each command (e.g., 1st, 2nd, 3rd, etc) along with the command content.</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong><br>1st: touch path0/{s.csv,q.json,l.py,w.csv,n.csv,j.json,q.py}<br>2nd: touch path0/{f.csv,a.json,z.json,w.py,x.py,l.txt,a.csv}<br>3rd: touch path0/{e.csv,i.json,t.txt,d.json}</p>
+					</div>
+				</div>
+				
+				<!-- Recall Count -->
+				<div class="track">
+					<div class="track-title recall_count">Recall Count</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>How many different `.csv` files were involved in the `rm` commands throughout the video? Provide the file count along with the specific file names (e.g., 2 `.txt` files: a.txt, b.txt).</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>2 `.csv` files: b.csv, n.csv</p>
+					</div>
+				</div>
+
+				<!-- Infer State -->
+				<div class="track">
+					<div class="track-title infer_state">Infer State</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>At the end of the video, how many `.py` files remain in `path0/`? Provide the file count along with the specific file names (e.g., 2 `.txt` files: a.txt, b.txt).</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>4 `.py` files: v.py, x.py, q.py, w.py</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="tracks-row flex" style="margin-top: 20px;">
+				<!-- Compare State -->
+				<div class="track">
+					<div class="track-title compare_state">Compare State</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>What files were in `path0/` at the start of the video, but were not there at the end of the video?</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>b.csv, g.txt, o.txt, p.py</p>
+					</div>
+				</div>
+				<!-- Predict State -->
+				<div class="track">
+					<div class="track-title predict_state">Predict State</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>If the paths currently contain exactly the same files as they did at the end of the video, and we run the command `touch path0/{x.json,z.txt,f.py,w.json,h.py,t.json} & rm -rf path0/{s.csv,w.py,j.json,d.json} & rm -rf path0/{a.csv} & rm -rf path0/{a.json} & rm -rf path0/{w.csv,x.txt,t.txt,h.py}`, which `.csv` files would be in `path0`?</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>f.csv, n.csv, v.csv, d.csv, h.csv, e.csv</p>
+					</div>
+				</div>
+				<!-- Predict Operation -->
+				<div class="track">
+					<div class="track-title predict_operation">Predict Operation</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>If the paths currently contain exactly the same files as they did at the end of the video, to ensure that `path0` contains exactly the following files: `l.txt, w.py, v.py, q.py, a.csv, d.csv, i.json, w.csv, z.json, x.txt, f.csv, y.txt, e.csv, v.csv, j.json, q.json, a.json, n.csv, d.py, d.json, f.py, t.txt`, what sequence of commands should be executed?
+							<br>Rules:
+							<br>1. You may only use the commands `touch` and `rm -rf`.
+							<br>2. You may use at most two commands.
+							<br>3. Files specified in `touch` must not appear in `rm -rf` command, and vice versa (i.e., no overlap).
+							<br><br>Response Format:
+							<br>If multiple commands are used, separate them with `&`. For example, `touch path0/{a.txt,b.txt} & rm -rf path0/{c.py,d.json}`.</p>
+						<p>{Answer Prompt}</p>
+					</div>
+				</div>
+			</div>
+			<p class="description text-left">
+				<br>
+				<strong>Answer Prompt:</strong> Provide a summary of the final answer after 'Final Answer:'
+			</p>
+		</div>
+	</section>
+
+	<section id="Card">
+		<hr class="mt-5">
+
+		<div class="container text-center" style="margin-top: 30px">
+			<!-- Section Title -->
+			<h2 class="section-title">VideoReasonBench Examples - Card</h2>
+			<video id="clickVideo" class="video-teaser" src="./assets/samples/card_full.mp4" type="video/mp4" controls></video>
+
+			<script>
+				const video = document.getElementById('clickVideo');
+
+				// 可选：初始不显示控制条
+				video.removeAttribute('autoplay');
+				video.removeAttribute('muted');
+				video.removeAttribute('loop');
+				video.removeAttribute('playsinline');
+
+				// 点击视频区域时播放或暂停
+				video.addEventListener('click', () => {
+					if (video.paused) {
+					video.play();
+					} else {
+					video.pause();
+					}
+				});
+			</script>
+	
+			<!-- Question Tracks -->
+			<p class="description text-left">
+				<br>
+				<strong>Task Description:</strong> The video showcases a sequence of operations involving one or more piles of cards. It begins by displaying the initial arrangement of cards in each pile from top to bottom. The cards are then turned face down, after which a series of actions is carried out. Note that there are only two types of actions: adding one card to the top of the pile or removing one card from the bottom of the pile. Please carefully watch the video and answer the following question:
+			</p>
+
+			<div class="tracks-row flex" style="margin-top: 20px;">
+				<!-- Recall Order -->
+				<div class="track">
+					<div class="track-title recall_order">Recall Order</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>What are the 1st to 3rd cards being added to any pile throughout the video? For each card, provide the following details:<br>1. The order (e.g., 1st or 2nd)<br>2. The suit and value (e.g., 6 of Hearts)<br>3. The pile involved (e.g., pile0, pile1)<br><br>Format your response like this:<br>1st: 6 of Hearts, pile0<br>2nd: Jack of Spades, pile1.</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>1st: Queen of Clubs, pile0, 2nd: Ace of Hearts, pile0, 3rd: Jack of Diamonds, pile0</p>
+					</div>
+				</div>
+				
+				<!-- Recall Count -->
+				<div class="track">
+					<div class="track-title recall_count">Recall Count</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>How many cards were added to `pile0` throughout the video? For each card, provide its suit and value (e.g., 6 of Hearts)<br>Format your response like this:<br>2 cards: 6 of Hearts, King of Clubs.</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>4 cards: Jack of Clubs, Jack of Diamonds, Queen of Clubs, Ace of Hearts</p>
+					</div>
+				</div>
+
+				<!-- Infer State -->
+				<div class="track">
+					<div class="track-title infer_state">Infer State</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>At the end of the video, what cards are in `pile0`? List them in order from top to bottom, including both the value and suit of each card.<br>Format your response like this:<br>6 of Hearts, King of Clubs, 3 of Spades.</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>Jack of Clubs, Jack of Diamonds, Ace of Hearts, Queen of Clubs, King of Diamonds, 8 of Diamonds, 3 of Diamonds, 8 of Clubs</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="tracks-row flex" style="margin-top: 20px;">
+				<!-- Compare State -->
+				<div class="track">
+					<div class="track-title compare_state">Compare State</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>What cards were in `pile0` at the start of the video, but were not there at the end of the video? For each card, provide its suit and value.<br>Format your response like this:<br>6 of Hearts, King of Clubs, 3 of Spades.</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>7 of Spades</p>
+					</div>
+				</div>
+				<!-- Predict State -->
+				<div class="track">
+					<div class="track-title predict_state">Predict State</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>If the piles currently contain exactly the same cards as they did at the end of the video, and now we perform these actions in order: `remove 8 of Clubs from pile0, remove 3 of Diamonds from pile0, remove 8 of Diamonds from pile0, remove King of Diamonds from pile0, add Jack of Spades to pile0`. What cards would be in `pile0`? List them in order from top to bottom, including both the value and suit of each card.<br>Format your response like this:<br>6 of Hearts, King of Clubs, 3 of Spades.</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>Jack of Spades, Jack of Clubs, Jack of Diamonds, Ace of Hearts, Queen of Clubs</p>
+					</div>
+				</div>
+				<!-- Predict Operation -->
+				<div class="track">
+					<div class="track-title predict_operation">Predict Operation</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>If the piles currently contain exactly the same cards as they did at the end of the video, to ensure that `pile0` contains exactly the following cards from top to bottom: `7 of Diamonds, Jack of Clubs, Jack of Diamonds, Ace of Hearts`, what sequence of actions should be performed?<br>Rules:<br>1. Each action must either add a card to a pile or remove a card from a pile.<br>2. You may only add cards to the top of a pile or remove cards from the bottom of a pile.<br><br>Response Format:<br>List the actions in sequence, specifying the action, card, and pile. Separate each action with a comma.<br>For example, `add 6 of Hearts to pile0, remove King of Clubs from pile0`</p>
+						<p>{Answer Prompt}</p>
+					</div>
+				</div>
+			</div>
+			<p class="description text-left">
+				<br>
+				<strong>Answer Prompt:</strong> Provide a summary of the final answer after 'Final Answer:'
+			</p>
+		</div>
+	</section>
+
+	<section id="Chip">
+		<hr class="mt-5">
+
+		<div class="container text-center" style="margin-top: 30px">
+			<!-- Section Title -->
+			<h2 class="section-title">VideoReasonBench Examples - Chip</h2>
+			<video id="clickVideo" class="video-teaser" src="./assets/samples/chip_full.mp4" type="video/mp4" controls></video>
+
+			<script>
+				const video = document.getElementById('clickVideo');
+
+				// 可选：初始不显示控制条
+				video.removeAttribute('autoplay');
+				video.removeAttribute('muted');
+				video.removeAttribute('loop');
+				video.removeAttribute('playsinline');
+
+				// 点击视频区域时播放或暂停
+				video.addEventListener('click', () => {
+					if (video.paused) {
+					video.play();
+					} else {
+					video.pause();
+					}
+				});
+			</script>
+	
+			<!-- Question Tracks -->
+			<p class="description text-left">
+				<br>
+				<strong>Task Description:</strong> The video showcases a sequence of operations involving one or more cup(s) and chips. It begins by showing the initial chips contained in each cup. Then, a series of actions are carried out. Note that there are only two types of actions: adding one chip to a cup or removing one chip from a cup. Please carefully watch the video and answer the following question:
+			</p>
+
+			<div class="tracks-row flex" style="margin-top: 20px;">
+				<!-- Recall Order -->
+				<div class="track">
+					<div class="track-title recall_order">Recall Order</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>Disregarding the process of revealing all chips in the cup(s), what are the 1st to 3rd chips being added to any cup throughout the video? For each chip, provide the following details:<br>1. The order (e.g., 1st or 2nd)<br>2. The value (e.g., 20)<br>3. The cup involved (e.g., cup0, cup1)<br>Format your response like this:<br>1st: 100, cup0<br>2nd: 20, cup1</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>1st: 100, cup0, 2nd: 10, cup0, 3rd: 5, cup0</p>
+					</div>
+				</div>
+				
+				<!-- Recall Count -->
+				<div class="track">
+					<div class="track-title recall_count">Recall Count</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>Disregarding the process of revealing all chips in the cup(s), how many chips were added to `cup0` throughout the video? For each chip, provide its value (order does not matter).<br>Format your response like this:<br>4 chips: 20, 5, 100, 100.</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>3 chips: 100, 10, 5</p>
+					</div>
+				</div>
+
+				<!-- Infer State -->
+				<div class="track">
+					<div class="track-title infer_state">Infer State</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>At the end of the video, how many chips were in `cup0`? For each chip, provide its value (order does not matter).<br>Format your response like this:<br>4 chips: 20, 5, 100, 100.</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>4 chips: 20, 100, 10, 5</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="tracks-row flex" style="margin-top: 20px;">
+				<!-- Compare State -->
+				<div class="track">
+					<div class="track-title compare_state">Compare State</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>At which point in the video is the total value of chips in `cup0` higher, at start or end? Also, what is the difference in value between the two times?<br>Format your response like this:<br> {time_with_higher_value}, {difference_in_value} (e.g., start, 115).</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>end, 5</p>
+					</div>
+				</div>
+				<!-- Predict State -->
+				<div class="track">
+					<div class="track-title predict_state">Predict State</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>If the cups currently contain exactly the same chips as they did at the end of the video, and now we perform these actions in order: `remove 5 from cup0, remove 20 from cup0, remove 10 from cup0, add 5 to cup0, remove 100 from cup0`. How many chips would be in `cup0`? For each chip, provide its value (order does not matter).<br>Format your response like this:<br>4 chips: 20, 5, 100, 100.</p>
+						<p>{Answer Prompt}</p>
+						<p><strong>Ground truth: </strong>1 chips: 5</p>
+					</div>
+				</div>
+				<!-- Compare State -->
+				<div class="track">
+					<div class="track-title predict_operation">Predict Operation</div>
+					<div class="track-content">
+						<p><strong>Question:</strong></p>
+						<p>{Task Description}</p>
+						<p>If the cups currently contain exactly the same chips as they did at the end of the video, to ensure that `cup0` contains exactly the following chips: `100, 10, 5, 5, 10, 20` (order does not matter), what sequence of actions should be performed?<br>Rules:<br>1. Each action must either add a chip to a cup or remove a chip from a cup.<br>2. Available chips for addition are: 5, 10, 20, 50, 100.<br>3. You may only remove a chip if it is already present in the cup.<br><br>Response Format:<br>List the actions in sequence, specifying the action, chip, and cup. Separate each action with a comma.<br>For example, `add 20 to cup0, remove 50 cup0`</p>
+						<p>{Answer Prompt}</p>
+					</div>
+				</div>
+			</div>
+			<p class="description text-left">
+				<br>
+				<strong>Answer Prompt:</strong> Provide a summary of the final answer after 'Final Answer:'
+			</p>
+		</div>
+	</section>
+	
+	
+	<!-- <hr class="mt-5"> -->
+
+	<section id="citation" style="text-align: center; margin-top: 10px;">
+		<h2 style="font-weight: bold;">Citation</h2>
+		<div style="background-color: #f5f5f5; padding: 15px; border-radius: 8px; display: inline-block; text-align: left; width: 80%;">
+			<pre style="white-space: pre-wrap; font-family: monospace; margin: 1px;">
+				Coming Soon...
+			</pre>
+		</div>
+	</section>
+	<!-- <section id="citation" style="text-align: center; margin-top: 10px;">
+		<h2 style="font-weight: bold;">Citation</h2>
+		<div style="background-color: #f5f5f5; padding: 15px; border-radius: 8px; display: inline-block; text-align: left; width: 80%;">
+			<pre style="white-space: pre-wrap; font-family: monospace; margin: 1px;">
+@article{videoreasonbench,
+	title={VideoReasonBench: Can MLLMs Perform Vision-Centric Complex Video Reasoning?},
+	author={Yuanxin Liu and Kun Ouyang and Haoning Wu and Yi Liu and Lin Sui and Xinhao Li and Yan Zhong and Y. Charles and Xinyu Zhou and Xu Sun},
+	booktitle={arXiv preprint arXiv:xxxx.xxxx},
+	year={2025},
+	url={https://arxiv.org/abs/xxx}
+}
+			</pre>
+		</div>
+	</section> -->
+	<hr class="mt-5">
+
+	<section id="acknowledgement">
+		<div class="container text-left">
+			<h1 class="jumbotron-heading text-center">Acknowledgement</h1>
+			<div style="display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 20px">
+				<p style="font-weight: 200">
+					This website is adapted from <a href="https://snap-research.github.io/Panda-70M/" target="_blank" style="color: #007bff; text-decoration: underline;">Panda-70M</a> and <a href="https://videommmu.github.io/" target="_blank" style="color: #007bff; text-decoration: underline;">Video-MMMU</a>.
+				All website content is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" style="color: #007bff; text-decoration: underline;">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+				</p>
+			</div>
+		</div>
+	</section>
+	
+
+</body>
+</html>
