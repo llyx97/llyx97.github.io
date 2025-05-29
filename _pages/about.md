@@ -73,7 +73,7 @@ Lei Li*, **Yuanxin Liu**\*, Linli Yao, Peiyuan Zhang, Chenxin An, Lean Wang, Xu 
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/videoreasonbench.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/videoreasonbench.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 VIDEOREASONBENCH: Can MLLMs Perform Vision-Centric Complex Video Reasoning?
@@ -84,7 +84,7 @@ VIDEOREASONBENCH: Can MLLMs Perform Vision-Centric Complex Video Reasoning?
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/spacer.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/spacer.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [SpaceR: Reinforcing MLLMs in Video Spatial Reasoning](https://arxiv.org/pdf/2504.01805v2)
