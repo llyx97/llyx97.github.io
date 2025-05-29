@@ -30,11 +30,14 @@ I received the degree of Master of Science in Engineering from the University of
 
 # Research Interests
 * Multimodal Large Language Models
+* Video Understanding
 * Natural Language Processing
 * Pre-trained Language Model Compression
 
 
 # 📝 Selected Publications ([Full List](https://scholar.google.com/citations?user=pLOm4rYAAAAJ&hl=en)<a href='https://scholar.google.com/citations?user=pLOm4rYAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>) 
+
+## Vision and Language
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/t3.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -43,7 +46,7 @@ I received the degree of Master of Science in Engineering from the University of
 
 Lei Li*, **Yuanxin Liu**\*, Linli Yao, Peiyuan Zhang, Chenxin An, Lean Wang, Xu Sun, Lingpeng Kong, Qi Liu
 
-[**Project**](https://video-t3.github.io/) | [**Paper**](https://arxiv.org/abs/2410.06166) 
+[**Project**](https://video-t3.github.io/) | [**Paper**](https://arxiv.org/abs/2410.06166) | [**Code**](https://github.com/llyx97/video-t3)
 </div>
 </div>
 
@@ -70,6 +73,40 @@ Lei Li*, **Yuanxin Liu**\*, Linli Yao, Peiyuan Zhang, Chenxin An, Lean Wang, Xu 
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/videoreasonbench.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+VIDEOREASONBENCH: Can MLLMs Perform Vision-Centric Complex Video Reasoning?
+
+**Yuanxin Liu**, Kun Ouyang, Haoning Wu, Yi Liu, Lin Sui, Xinhao Li, Yan Zhong, Y. Charles, Xinyu Zhou, Xu Sun
+
+[**Project**](https://llyx97.github.io/video_reason_bench/) | [**Code**](https://github.com/llyx97/video_reason_bench)
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/spacer.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[SpaceR: Reinforcing MLLMs in Video Spatial Reasoning](https://arxiv.org/pdf/2504.01805v2)
+
+Kun Ouyang, **Yuanxin Liu**, Haoning Wu, Yi Liu, Hao Zhou, Jie Zhou, Fandong Meng, Xu Sun
+
+[**Paper**](https://arxiv.org/pdf/2504.01805) | [**Code**](https://github.com/OuyangKun10/SpaceR)
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2019</div><img src='images/mia.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Aligning visual regions and textual concepts for semantic-grounded image representations](https://papers.nips.cc/paper/2019/hash/9fe77ac7060e716f2d42631d156825c0-Abstract.html)
+
+Fenglin Liu\*, **Yuanxin Liu**\*, Xuancheng Ren\*, Xiaodong He, Xu Sun
+
+[**Paper**](https://papers.nips.cc/paper/2019/hash/9fe77ac7060e716f2d42631d156825c0-Abstract.html)
+</div>
+</div>
+
+## Pre-trained Language Model Compression
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2022</div><img src='images/srnet.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -119,17 +156,6 @@ Lei Li*, **Yuanxin Liu**\*, Linli Yao, Peiyuan Zhang, Chenxin An, Lean Wang, Xu 
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2019</div><img src='images/mia.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Aligning visual regions and textual concepts for semantic-grounded image representations](https://papers.nips.cc/paper/2019/hash/9fe77ac7060e716f2d42631d156825c0-Abstract.html)
-
-Fenglin Liu\*, **Yuanxin Liu**\*, Xuancheng Ren\*, Xiaodong He, Xu Sun
-
-[**Paper**](https://papers.nips.cc/paper/2019/hash/9fe77ac7060e716f2d42631d156825c0-Abstract.html)
-</div>
-</div>
-
 # 🎖 Honors and Awards
 * **Outstanding Graduates of Beijing & UCAS**, 2022
 * **CAS Presidential Excellent Scholarship**, CAS, 2022
@@ -148,7 +174,8 @@ Fenglin Liu\*, **Yuanxin Liu**\*, Xuancheng Ren\*, Xiaodong He, Xu Sun
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
 # 💻 Internships
-* Research Intern at ByteDance Seed, July. 2024 - Feb. 2025.
+* Research Intern at Moonshot AI, Mar. 2025 - Now. Mentor: [Haoning Wu](https://teowu.github.io/)
+* Research Intern at ByteDance Seed, July. 2024 - Mar. 2025. Mentor: Haoyuan Guo and [Lu Jiang](http://www.lujiang.info/)
 * Research Intern at WeChat AI, Tencent Inc., Oct. 2020 - Jun. 2022. Mentor: [Fandong Meng](https://fandongmeng.github.io/)
 
 # Academic Service
