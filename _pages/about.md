@@ -106,6 +106,17 @@ Fenglin Liu\*, **Yuanxin Liu**\*, Xuancheng Ren\*, Xiaodong He, Xu Sun
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Technical Report</div><img src='images/kimivl.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[KIMI-VL TECHNICAL REPORT](https://arxiv.org/pdf/2504.07491)
+
+Kimi Team
+
+[**Paper**](https://arxiv.org/pdf/2504.07491) | [**Code**](https://github.com/MoonshotAI/Kimi-VL)
+</div>
+</div>
+
 ## Pre-trained Language Model Compression
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2022</div><img src='images/srnet.jpg' alt="sym" width="100%"></div></div>
