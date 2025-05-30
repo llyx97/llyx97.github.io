@@ -76,11 +76,11 @@ Lei Li*, **Yuanxin Liu**\*, Linli Yao, Peiyuan Zhang, Chenxin An, Lean Wang, Xu 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/videoreasonbench.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-VIDEOREASONBENCH: Can MLLMs Perform Vision-Centric Complex Video Reasoning?
+[VIDEOREASONBENCH: Can MLLMs Perform Vision-Centric Complex Video Reasoning?](https://arxiv.org/pdf/2505.23359)
 
 **Yuanxin Liu**, Kun Ouyang, Haoning Wu, Yi Liu, Lin Sui, Xinhao Li, Yan Zhong, Y. Charles, Xinyu Zhou, Xu Sun
 
-[**Project**](https://llyx97.github.io/video_reason_bench/) | [**Code**](https://github.com/llyx97/video_reason_bench)
+[**Project**](https://llyx97.github.io/video_reason_bench/) | [**Paper**](https://arxiv.org/pdf/2505.23359) | [**Code**](https://github.com/llyx97/video_reason_bench)
 </div>
 </div>
 
