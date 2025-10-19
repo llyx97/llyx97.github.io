@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a third-year PhD student at the Language Computing and Machine Learning Group ([Lanco](https://lancopku.github.io/)), Institute of Computational Linguistics (National Key Laboratory for Multimedia Information Processing), School of Computer Science, Peking University. I am supervised by Prof. [Xu Sun](https://xusun26.github.io/). 
+I am a fourth-year PhD student at the Language Computing and Machine Learning Group ([Lanco](https://lancopku.github.io/)), Institute of Computational Linguistics (National Key Laboratory for Multimedia Information Processing), School of Computer Science, Peking University. I am supervised by Prof. [Xu Sun](https://xusun26.github.io/). 
 
 I received the degree of Master of Science in Engineering from the University of Chinese Academy of Sciences (UCAS), supervised by Prof. [Zheng Lin](https://teacher.ucas.ac.cn/~0023257).
 
@@ -34,10 +34,31 @@ I received the degree of Master of Science in Engineering from the University of
 * Natural Language Processing
 * Pre-trained Language Model Compression
 
+# 📖 Educations
+* **Sept. 2022 - Now**: PhD student, majoring in Computer Software and Theory, Peking University.
+* **Sept. 2019 - Jun. 2022**: Master Student, majoring in Computer Applied Technology, Institute of Information Engineering (IIE), CAS & UCAS.
+* **Sept. 2015 - Jun. 2019**: Bachelor of Communication Engineering, Beijing University of Posts and Telecommunications.
+
+# 💻 Internships
+* Research Intern at Moonshot AI, Mar. 2025 - Now. Mentor: [Haoning Wu](https://teowu.github.io/)
+* Research Intern at ByteDance Seed, July. 2024 - Mar. 2025. Mentor: Haoyuan Guo and [Lu Jiang](http://www.lujiang.info/)
+* Research Intern at WeChat AI, Tencent Inc., Oct. 2020 - Jun. 2022. Mentor: [Fandong Meng](https://fandongmeng.github.io/)
+
 
 # 📝 Selected Publications ([Full List](https://scholar.google.com/citations?user=pLOm4rYAAAAJ&hl=en)<a href='https://scholar.google.com/citations?user=pLOm4rYAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>) 
 
 ## Vision and Language
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Technical Report</div><img src='images/kimivl.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[KIMI-VL TECHNICAL REPORT](https://arxiv.org/pdf/2504.07491)
+
+Kimi Team (including me as **core contributor**)
+
+[**Paper**](https://arxiv.org/pdf/2504.07491) | [**Code**](https://github.com/MoonshotAI/Kimi-VL) | [**Model**](https://huggingface.co/moonshotai/Kimi-VL-A3B-Thinking-2506)
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/t3.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -46,21 +67,31 @@ I received the degree of Master of Science in Engineering from the University of
 
 Lei Li*, **Yuanxin Liu**\*, Linli Yao, Peiyuan Zhang, Chenxin An, Lean Wang, Xu Sun, Lingpeng Kong, Qi Liu
 
-[**Project**](https://video-t3.github.io/) | [**Paper**](https://arxiv.org/abs/2410.06166) | [**Code**](https://github.com/llyx97/video-t3)
+[**Project**](https://video-t3.github.io/) | [**Paper**](https://arxiv.org/pdf/2410.06166) | [**Code**](https://github.com/llyx97/video-t3)
 </div>
 </div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2024 Findings</div><img src='images/tempcompass.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[TempCompass: Do Video LLMs Really Understand Videos?](https://arxiv.org/pdf/2403.00476.pdf)
+[TempCompass: Do Video LLMs Really Understand Videos?](https://arxiv.org/pdf/2403.00476)
 
 **Yuanxin Liu**\*, Shicheng Li*, Yi Liu, Yuxiang Wang, Shuhuai Ren, Lei Li, Sishuo Chen, Xu Sun, Lu Hou
 
-[**Project**](https://llyx97.github.io/tempcompass/) | [**Paper**](https://arxiv.org/abs/2403.00476) | [**Code**](https://github.com/llyx97/TempCompass)
+[**Project**](https://llyx97.github.io/tempcompass/) | [**Paper**](https://arxiv.org/pdf/2403.00476) | [**Code**](https://github.com/llyx97/TempCompass)
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025 Track Datasets and Benchmarks</div><img src='images/uve.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[UVE: Are MLLMs Unified Evaluators for AI-Generated Videos?](https://arxiv.org/pdf/2503.09949)
+
+**Yuanxin Liu**, Lei Li, Shuhuai Ren, Rundong Gao, Shicheng Li, Sishuo Chen, Xu Sun and Lu Hou
+
+[**Paper**](https://arxiv.org/pdf/2503.09949) | [**Code**](https://github.com/bytedance/UVE) | [**Data**](https://huggingface.co/datasets/lyx97/UVE-Bench)
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2023 Track Datasets and Benchmarks</div><img src='images/fetv.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -69,7 +100,7 @@ Lei Li*, **Yuanxin Liu**\*, Linli Yao, Peiyuan Zhang, Chenxin An, Lean Wang, Xu 
 
 **Yuanxin Liu**, Lei Li, Shuhuai Ren, Rundong Gao, Shicheng Li, Sishuo Chen, Xu Sun and Lu Hou
 
-[**Paper**](https://arxiv.org/abs/2311.01813) | [**Code**](https://github.com/llyx97/FETV)
+[**Paper**](https://arxiv.org/pdf/2311.01813) | [**Code**](https://github.com/llyx97/FETV)
 </div>
 </div>
 
@@ -103,17 +134,6 @@ Kun Ouyang, **Yuanxin Liu**, Haoning Wu, Yi Liu, Hao Zhou, Jie Zhou, Fandong Men
 Fenglin Liu\*, **Yuanxin Liu**\*, Xuancheng Ren\*, Xiaodong He, Xu Sun
 
 [**Paper**](https://papers.nips.cc/paper/2019/hash/9fe77ac7060e716f2d42631d156825c0-Abstract.html)
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Technical Report</div><img src='images/kimivl.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[KIMI-VL TECHNICAL REPORT](https://arxiv.org/pdf/2504.07491)
-
-Kimi Team
-
-[**Paper**](https://arxiv.org/pdf/2504.07491) | [**Code**](https://github.com/MoonshotAI/Kimi-VL)
 </div>
 </div>
 
@@ -175,21 +195,11 @@ Kimi Team
 * **IIE Presidential Special Award**, IIE, CAS, 2020
 * **Outstanding Graduates of Beijing**, Beijing Municipal Education Commission, 2019 
 
-# 📖 Educations
-* **Sept. 2022 - Now**: PhD student, majoring in Computer Software and Theory, Peking University.
-* **Sept. 2019 - Jun. 2022**: Master Student, majoring in Computer Applied Technology, Institute of Information Engineering (IIE), CAS & UCAS.
-* **Sept. 2015 - Jun. 2019**: Bachelor of Communication Engineering, Beijing University of Posts and Telecommunications.
-
 <!-- # 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
-# 💻 Internships
-* Research Intern at Moonshot AI, Mar. 2025 - Now. Mentor: [Haoning Wu](https://teowu.github.io/)
-* Research Intern at ByteDance Seed, July. 2024 - Mar. 2025. Mentor: Haoyuan Guo and [Lu Jiang](http://www.lujiang.info/)
-* Research Intern at WeChat AI, Tencent Inc., Oct. 2020 - Jun. 2022. Mentor: [Fandong Meng](https://fandongmeng.github.io/)
-
 # Academic Service
 * **Area Chair/Action Editor**: ACL ARR
-* **Reviewer**: NeurIPS (2022, 2023, 2024), ICML (2022, 2023, 2024), ICLR (2024, 2025), EMNLP (2023), ACL (2023), CVPR (2024, 2025), Computational Linguistics
-* **Teaching assistant**: Introduction to Natural Language processing (PKU, 2022 Fall), Natural Language processing (PKU, 2023 Fall)
+* **Reviewer**: NeurIPS (2022, 2023, 2024, 2025), ICML (2022, 2023, 2024), ICLR (2024, 2025, 2026), EMNLP (2023), ACL (2023), CVPR (2024, 2025), Computational Linguistics
+* **Teaching assistant**: Introduction to Natural Language processing (PKU, 2022 Fall), Natural Language processing (PKU, 2023, 2025 Fall)
