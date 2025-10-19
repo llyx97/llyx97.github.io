@@ -24,9 +24,9 @@ I received the degree of Master of Science in Engineering from the University of
 <!-- My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
 
-<!-- # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
+# 🔥 News
+- *2025.09*: UVE got accepted by NeurIPS 2025 Datasets & Benchmarks Track!
+<!-- - *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 
 # Research Interests
 * Multimodal Large Language Models
@@ -36,13 +36,13 @@ I received the degree of Master of Science in Engineering from the University of
 
 # 📖 Educations
 * **Sept. 2022 - Now**: PhD student, majoring in Computer Software and Theory, Peking University.
-* **Sept. 2019 - Jun. 2022**: Master Student, majoring in Computer Applied Technology, Institute of Information Engineering (IIE), CAS & UCAS.
-* **Sept. 2015 - Jun. 2019**: Bachelor of Communication Engineering, Beijing University of Posts and Telecommunications.
+* **Sept. 2019 - Jun. 2022**: M.S. in Computer Applied Technology, Institute of Information Engineering (IIE), CAS & UCAS.
+* **Sept. 2015 - Jun. 2019**: B.S. in Communication Engineering, Beijing University of Posts and Telecommunications.
 
 # 💻 Internships
-* Research Intern at Moonshot AI, Mar. 2025 - Now. Mentor: [Haoning Wu](https://teowu.github.io/)
-* Research Intern at ByteDance Seed, July. 2024 - Mar. 2025. Mentor: Haoyuan Guo and [Lu Jiang](http://www.lujiang.info/)
-* Research Intern at WeChat AI, Tencent Inc., Oct. 2020 - Jun. 2022. Mentor: [Fandong Meng](https://fandongmeng.github.io/)
+* Research Intern at **Moonshot AI**, Mar. 2025 - Now. Mentor: [Haoning Wu](https://teowu.github.io/)
+* Research Intern at **ByteDance Seed**, July. 2024 - Mar. 2025. Mentor: Haoyuan Guo and [Lu Jiang](http://www.lujiang.info/)
+* Research Intern at **PRC, WeChat AI**, Tencent Inc., Oct. 2020 - Jun. 2022. Mentor: [Fandong Meng](https://fandongmeng.github.io/)
 
 
 # 📝 Selected Publications ([Full List](https://scholar.google.com/citations?user=pLOm4rYAAAAJ&hl=en)<a href='https://scholar.google.com/citations?user=pLOm4rYAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>) 
@@ -195,9 +195,9 @@ Fenglin Liu\*, **Yuanxin Liu**\*, Xuancheng Ren\*, Xiaodong He, Xu Sun
 * **IIE Presidential Special Award**, IIE, CAS, 2020
 * **Outstanding Graduates of Beijing**, Beijing Municipal Education Commission, 2019 
 
-<!-- # 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
+# 💬 Invited Talks
+- *2025.03*, [NICE-NLP](https://nice-nlp.github.io/), Temporal Reasoning Transfer from Text to Video, [Video (in Chinese)](https://www.bilibili.com/video/BV16tXpYqEea/)
+<!-- - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
 # Academic Service
 * **Area Chair/Action Editor**: ACL ARR
