@@ -25,7 +25,8 @@ I received the degree of Master of Science in Engineering from the University of
 
 
 # 🔥 News
-- *2025.09*: UVE got accepted by NeurIPS 2025 Datasets & Benchmarks Track!
+- *2026.01*: [VideoReasonBench](https://llyx97.github.io/video_reason_bench/) got accepted by ICLR 2026!
+- *2025.09*: [UVE](https://github.com/bytedance/UVE) got accepted by NeurIPS 2025 Datasets & Benchmarks Track!
 <!-- - *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 
 # Research Interests
@@ -40,7 +41,8 @@ I received the degree of Master of Science in Engineering from the University of
 * **Sept. 2015 - Jun. 2019**: B.S. in Communication Engineering, Beijing University of Posts and Telecommunications.
 
 # 💻 Internships
-* Research Intern at **Moonshot AI**, Mar. 2025 - Now. Mentor: [Haoning Wu](https://teowu.github.io/)
+* Research Intern at **Xiaomi MiMo**, Jan. 2026 - Now.
+* Research Intern at **Moonshot AI**, Mar. 2025 - Dec. 2025. Mentor: [Haoning Wu](https://teowu.github.io/)
 * Research Intern at **ByteDance Seed**, July. 2024 - Mar. 2025. Mentor: Haoyuan Guo and [Lu Jiang](http://www.lujiang.info/)
 * Research Intern at **PRC, WeChat AI**, Tencent Inc., Oct. 2020 - Jun. 2022. Mentor: [Fandong Meng](https://fandongmeng.github.io/)
 
@@ -57,6 +59,28 @@ I received the degree of Master of Science in Engineering from the University of
 Kimi Team (including me as **core contributor**)
 
 [**Paper**](https://arxiv.org/pdf/2504.07491) | [**Code**](https://github.com/MoonshotAI/Kimi-VL) | [**Model**](https://huggingface.co/moonshotai/Kimi-VL-A3B-Thinking-2506)
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2026</div><img src='images/videoreasonbench.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[VIDEOREASONBENCH: Can MLLMs Perform Vision-Centric Complex Video Reasoning?](https://arxiv.org/pdf/2505.23359)
+
+**Yuanxin Liu**, Kun Ouyang, Haoning Wu, Yi Liu, Lin Sui, Xinhao Li, Yan Zhong, Y. Charles, Xinyu Zhou, Xu Sun
+
+[**Project**](https://llyx97.github.io/video_reason_bench/) | [**Paper**](https://arxiv.org/pdf/2505.23359) | [**Code**](https://github.com/llyx97/video_reason_bench)
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Technical Report</div><img src='images/k2.5.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Kimi K2.5: Visual Agentic Intelligence](https://github.com/MoonshotAI/Kimi-K2.5/blob/master/tech_report.pdf)
+
+Kimi Team
+
+[**Paper**](https://github.com/MoonshotAI/Kimi-K2.5/blob/master/tech_report.pdf) | [**Tech Blog**](https://www.kimi.com/blog/kimi-k2-5.html) | [**Code**](https://github.com/MoonshotAI/Kimi-K2.5/blob/master/tech_report.pdf) | [**HuggingFace**](https://huggingface.co/collections/moonshotai/kimi-k25)
 </div>
 </div>
 
@@ -101,17 +125,6 @@ Lei Li*, **Yuanxin Liu**\*, Linli Yao, Peiyuan Zhang, Chenxin An, Lean Wang, Xu 
 **Yuanxin Liu**, Lei Li, Shuhuai Ren, Rundong Gao, Shicheng Li, Sishuo Chen, Xu Sun and Lu Hou
 
 [**Paper**](https://arxiv.org/pdf/2311.01813) | [**Code**](https://github.com/llyx97/FETV)
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/videoreasonbench.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[VIDEOREASONBENCH: Can MLLMs Perform Vision-Centric Complex Video Reasoning?](https://arxiv.org/pdf/2505.23359)
-
-**Yuanxin Liu**, Kun Ouyang, Haoning Wu, Yi Liu, Lin Sui, Xinhao Li, Yan Zhong, Y. Charles, Xinyu Zhou, Xu Sun
-
-[**Project**](https://llyx97.github.io/video_reason_bench/) | [**Paper**](https://arxiv.org/pdf/2505.23359) | [**Code**](https://github.com/llyx97/video_reason_bench)
 </div>
 </div>
 
