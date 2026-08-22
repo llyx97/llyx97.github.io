@@ -17,9 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a fourth-year PhD student at the Language Computing and Machine Learning Group ([Lanco](https://lancopku.github.io/)), Institute of Computational Linguistics (National Key Laboratory for Multimedia Information Processing), School of Computer Science, Peking University. I am supervised by Prof. [Xu Sun](https://xusun26.github.io/). 
-
-I received the degree of Master of Science in Engineering from the University of Chinese Academy of Sciences (UCAS), supervised by Prof. [Zheng Lin](https://teacher.ucas.ac.cn/~0023257).
+I am a Researcher at [Xiaomi MiMo](https://github.com/XiaomiMiMo). I was a PhD student at the [Language Computing and Machine Learning Group (Lanco)](https://lancopku.github.io/), Institute of Computational Linguistics (National Key Laboratory for Multimedia Information Processing), School of Computer Science, **Peking University**, supervised by Prof. [Xu Sun](https://xusun26.github.io/). Before joining PKU, I received my Master of Science in Engineering from the **University of Chinese Academy of Sciences (UCAS)** under the guidance of Prof. [Zheng Lin](https://teacher.ucas.ac.cn/~0023257).
 
 <!-- My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
@@ -36,7 +34,7 @@ I received the degree of Master of Science in Engineering from the University of
 * Pre-trained Language Model Compression
 
 # 📖 Educations
-* **Sept. 2022 - Now**: PhD student, majoring in Computer Software and Theory, Peking University.
+* **Sept. 2022 - Jun. 2026**: PhD student, majoring in Computer Software and Theory, Peking University.
 * **Sept. 2019 - Jun. 2022**: M.S. in Computer Applied Technology, Institute of Information Engineering (IIE), CAS & UCAS.
 * **Sept. 2015 - Jun. 2019**: B.S. in Communication Engineering, Beijing University of Posts and Telecommunications.
 
