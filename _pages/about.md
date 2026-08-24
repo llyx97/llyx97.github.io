@@ -39,7 +39,7 @@ I am a Researcher at [Xiaomi MiMo](https://github.com/XiaomiMiMo). I was a PhD s
 * **Sept. 2015 - Jun. 2019**: B.S. in Communication Engineering, Beijing University of Posts and Telecommunications.
 
 # 💻 Internships
-* Research Intern at **Xiaomi MiMo**, Jan. 2026 - Now.
+* Research Intern at **Xiaomi MiMo**, Jan. 2026 - Jun. 2026.
 * Research Intern at **Moonshot AI**, Mar. 2025 - Dec. 2025. Mentor: [Haoning Wu](https://teowu.github.io/)
 * Research Intern at **ByteDance Seed**, July. 2024 - Mar. 2025. Mentor: Haoyuan Guo and [Lu Jiang](http://www.lujiang.info/)
 * Research Intern at **PRC, WeChat AI**, Tencent Inc., Oct. 2020 - Jun. 2022. Mentor: [Fandong Meng](https://fandongmeng.github.io/)
