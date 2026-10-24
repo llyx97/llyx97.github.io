@@ -28,6 +28,7 @@ I am a Researcher at [Xiaomi MiMo](https://github.com/XiaomiMiMo). I was a PhD s
 <!-- - *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 
 # Research Interests
+* Design & Coding Agent
 * Multimodal Large Language Models
 * Video Understanding
 * Natural Language Processing
@@ -46,6 +47,30 @@ I am a Researcher at [Xiaomi MiMo](https://github.com/XiaomiMiMo). I was a PhD s
 
 
 # 📝 Selected Publications ([Full List](https://scholar.google.com/citations?user=pLOm4rYAAAAJ&hl=en)<a href='https://scholar.google.com/citations?user=pLOm4rYAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>) 
+
+## Agent
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Technical Report</div><img src='images/k2.5.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Kimi K2.5: Visual Agentic Intelligence](https://github.com/MoonshotAI/Kimi-K2.5/blob/master/tech_report.pdf)
+
+Kimi Team
+
+[**Paper**](https://github.com/MoonshotAI/Kimi-K2.5/blob/master/tech_report.pdf) | [**Tech Blog**](https://www.kimi.com/blog/kimi-k2-5.html) | [**Code**](https://github.com/MoonshotAI/Kimi-K2.5/blob/master/tech_report.pdf) | [**HuggingFace**](https://huggingface.co/collections/moonshotai/kimi-k25)
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Technical Report</div><img src='images/mimo.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[MiMo-V2.6: Scaling Reinforcement Learning Towards Self-Improvement](https://arxiv.org/abs/2610.11959)
+
+Xiaomi LLM-Core Team
+
+[**Paper**](https://arxiv.org/pdf/2610.11959) | [**MiMo-V2.6-Pro-RL**](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL) | [**MiMo-V2.6-Distill-Qwen-9B**](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B)
+</div>
+</div>
 
 ## Vision and Language
 
@@ -68,17 +93,6 @@ Kimi Team (including me as **core contributor**)
 **Yuanxin Liu**, Kun Ouyang, Haoning Wu, Yi Liu, Lin Sui, Xinhao Li, Yan Zhong, Y. Charles, Xinyu Zhou, Xu Sun
 
 [**Project**](https://llyx97.github.io/video_reason_bench/) | [**Paper**](https://arxiv.org/pdf/2505.23359) | [**Code**](https://github.com/llyx97/video_reason_bench)
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Technical Report</div><img src='images/k2.5.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Kimi K2.5: Visual Agentic Intelligence](https://github.com/MoonshotAI/Kimi-K2.5/blob/master/tech_report.pdf)
-
-Kimi Team
-
-[**Paper**](https://github.com/MoonshotAI/Kimi-K2.5/blob/master/tech_report.pdf) | [**Tech Blog**](https://www.kimi.com/blog/kimi-k2-5.html) | [**Code**](https://github.com/MoonshotAI/Kimi-K2.5/blob/master/tech_report.pdf) | [**HuggingFace**](https://huggingface.co/collections/moonshotai/kimi-k25)
 </div>
 </div>
 
