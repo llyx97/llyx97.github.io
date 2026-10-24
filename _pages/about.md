@@ -68,7 +68,7 @@ Kimi Team
 
 Xiaomi LLM-Core Team
 
-[**Paper**](https://arxiv.org/pdf/2610.11959) | [**MiMo-V2.6-Pro-RL**](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL) | [**MiMo-V2.6-Distill-Qwen-9B**](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B)
+[**Paper**](https://arxiv.org/pdf/2610.11959) | [**HuggingFace**](https://huggingface.co/collections/XiaomiMiMo/mimo-v26)
 </div>
 </div>
 
